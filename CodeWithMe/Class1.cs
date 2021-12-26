@@ -1,6 +1,7 @@
 ﻿namespace CodeWithMe
 {
-  public class Class1
-  {
-  }
+    public class Class1
+    {
+        private string some = "";
+    }
 }
