@@ -2,6 +2,6 @@
 {
     public class Class1
     {
-        private string some = "";
+        private string some = "abc";
     }
 }
