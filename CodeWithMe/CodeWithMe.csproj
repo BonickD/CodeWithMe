@@ -1,7 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
-    <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props"
-            Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')"/>
+    <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
     <PropertyGroup>
         <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
         <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
@@ -33,16 +32,1324 @@
         <WarningLevel>4</WarningLevel>
     </PropertyGroup>
     <ItemGroup>
-        <Reference Include="System"/>
-        <Reference Include="System.Core"/>
-        <Reference Include="System.Data"/>
-        <Reference Include="System.Xml"/>
+        <Reference Include="0Harmony, Version=1.2.0.1, Culture=neutral, PublicKeyToken=null">
+          <HintPath>..\..\..\..\Server\RustDedicated_Data\RustDedicated_Data\Managed\0Harmony.dll</HintPath>
+        </Reference>
+        <Reference Include="Accessibility, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+          <HintPath>..\..\..\..\Server\RustDedicated_Data\RustDedicated_Data\Managed\Accessibility.dll</HintPath>
+        </Reference>
+        <Reference Include="Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null">
+          <HintPath>..\..\..\..\Server\RustDedicated_Data\RustDedicated_Data\Managed\Assembly-CSharp.dll</HintPath>
+        </Reference>
+        <Reference Include="Assembly-CSharp-firstpass, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null">
+          <HintPath>..\..\..\..\Server\RustDedicated_Data\RustDedicated_Data\Managed\Assembly-CSharp-firstpass.dll</HintPath>
+        </Reference>
+        <Reference Include="CurvedTextMeshPro, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null">
+          <HintPath>..\..\..\..\Server\RustDedicated_Data\RustDedicated_Data\Managed\CurvedTextMeshPro.dll</HintPath>
+        </Reference>
+        <Reference Include="DelaunayER, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null">
+          <HintPath>..\..\..\..\Server\RustDedicated_Data\RustDedicated_Data\Managed\DelaunayER.dll</HintPath>
+        </Reference>
+        <Reference Include="EasyAntiCheat.Client, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null">
+          <HintPath>..\..\..\..\Server\RustDedicated_Data\RustDedicated_Data\Managed\EasyAntiCheat.Client.dll</HintPath>
+        </Reference>
+        <Reference Include="EasyAntiCheat.Server, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null">
+          <HintPath>..\..\..\..\Server\RustDedicated_Data\RustDedicated_Data\Managed\EasyAntiCheat.Server.dll</HintPath>
+        </Reference>
+        <Reference Include="EasyRoads3Dv3, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null">
+          <HintPath>..\..\..\..\Server\RustDedicated_Data\RustDedicated_Data\Managed\EasyRoads3Dv3.dll</HintPath>
+        </Reference>
+        <Reference Include="EZhex1991.EZSoftBone, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null">
+          <HintPath>..\..\..\..\Server\RustDedicated_Data\RustDedicated_Data\Managed\EZhex1991.EZSoftBone.dll</HintPath>
+        </Reference>
+        <Reference Include="Facepunch.BurstCloth, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null">
+          <HintPath>..\..\..\..\Server\RustDedicated_Data\RustDedicated_Data\Managed\Facepunch.BurstCloth.dll</HintPath>
+        </Reference>
+        <Reference Include="Facepunch.Console, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null">
+          <HintPath>..\..\..\..\Server\RustDedicated_Data\RustDedicated_Data\Managed\Facepunch.Console.dll</HintPath>
+        </Reference>
+        <Reference Include="Facepunch.GoogleSheets, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null">
+          <HintPath>..\..\..\..\Server\RustDedicated_Data\RustDedicated_Data\Managed\Facepunch.GoogleSheets.dll</HintPath>
+        </Reference>
+        <Reference Include="Facepunch.Input, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null">
+          <HintPath>..\..\..\..\Server\RustDedicated_Data\RustDedicated_Data\Managed\Facepunch.Input.dll</HintPath>
+        </Reference>
+        <Reference Include="Facepunch.Network, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null">
+          <HintPath>..\..\..\..\Server\RustDedicated_Data\RustDedicated_Data\Managed\Facepunch.Network.dll</HintPath>
+        </Reference>
+        <Reference Include="Facepunch.Raknet, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null">
+          <HintPath>..\..\..\..\Server\RustDedicated_Data\RustDedicated_Data\Managed\Facepunch.Raknet.dll</HintPath>
+        </Reference>
+        <Reference Include="Facepunch.Rcon, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null">
+          <HintPath>..\..\..\..\Server\RustDedicated_Data\RustDedicated_Data\Managed\Facepunch.Rcon.dll</HintPath>
+        </Reference>
+        <Reference Include="Facepunch.Skeleton, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null">
+          <HintPath>..\..\..\..\Server\RustDedicated_Data\RustDedicated_Data\Managed\Facepunch.Skeleton.dll</HintPath>
+        </Reference>
+        <Reference Include="Facepunch.Sqlite, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null">
+          <HintPath>..\..\..\..\Server\RustDedicated_Data\RustDedicated_Data\Managed\Facepunch.Sqlite.dll</HintPath>
+        </Reference>
+        <Reference Include="Facepunch.SteamNetworking, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null">
+          <HintPath>..\..\..\..\Server\RustDedicated_Data\RustDedicated_Data\Managed\Facepunch.SteamNetworking.dll</HintPath>
+        </Reference>
+        <Reference Include="Facepunch.Steamworks.Win64, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null">
+          <HintPath>..\..\..\..\Server\RustDedicated_Data\RustDedicated_Data\Managed\Facepunch.Steamworks.Win64.dll</HintPath>
+        </Reference>
+        <Reference Include="Facepunch.System, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null">
+          <HintPath>..\..\..\..\Server\RustDedicated_Data\RustDedicated_Data\Managed\Facepunch.System.dll</HintPath>
+        </Reference>
+        <Reference Include="Facepunch.Unity, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null">
+          <HintPath>..\..\..\..\Server\RustDedicated_Data\RustDedicated_Data\Managed\Facepunch.Unity.dll</HintPath>
+        </Reference>
+        <Reference Include="Facepunch.UnityEngine, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null">
+          <HintPath>..\..\..\..\Server\RustDedicated_Data\RustDedicated_Data\Managed\Facepunch.UnityEngine.dll</HintPath>
+        </Reference>
+        <Reference Include="Fleck, Version=0.0.0.1, Culture=neutral, PublicKeyToken=null">
+          <HintPath>..\..\..\..\Server\RustDedicated_Data\RustDedicated_Data\Managed\Fleck.dll</HintPath>
+        </Reference>
+        <Reference Include="GA, Version=1.1.7168.19305, Culture=neutral, PublicKeyToken=null">
+          <HintPath>..\..\..\..\Server\RustDedicated_Data\RustDedicated_Data\Managed\GA.dll</HintPath>
+        </Reference>
+        <Reference Include="I18N, Version=2.0.5.0, Culture=neutral, PublicKeyToken=0738eb9f132ed756">
+          <HintPath>..\..\..\..\Server\RustDedicated_Data\RustDedicated_Data\Managed\I18N.dll</HintPath>
+        </Reference>
+        <Reference Include="I18N.CJK, Version=2.0.5.0, Culture=neutral, PublicKeyToken=0738eb9f132ed756">
+          <HintPath>..\..\..\..\Server\RustDedicated_Data\RustDedicated_Data\Managed\I18N.CJK.dll</HintPath>
+        </Reference>
+        <Reference Include="I18N.MidEast, Version=2.0.5.0, Culture=neutral, PublicKeyToken=0738eb9f132ed756">
+          <HintPath>..\..\..\..\Server\RustDedicated_Data\RustDedicated_Data\Managed\I18N.MidEast.dll</HintPath>
+        </Reference>
+        <Reference Include="I18N.Other, Version=2.0.5.0, Culture=neutral, PublicKeyToken=0738eb9f132ed756">
+          <HintPath>..\..\..\..\Server\RustDedicated_Data\RustDedicated_Data\Managed\I18N.Other.dll</HintPath>
+        </Reference>
+        <Reference Include="I18N.Rare, Version=2.0.5.0, Culture=neutral, PublicKeyToken=0738eb9f132ed756">
+          <HintPath>..\..\..\..\Server\RustDedicated_Data\RustDedicated_Data\Managed\I18N.Rare.dll</HintPath>
+        </Reference>
+        <Reference Include="I18N.West, Version=2.0.5.0, Culture=neutral, PublicKeyToken=0738eb9f132ed756">
+          <HintPath>..\..\..\..\Server\RustDedicated_Data\RustDedicated_Data\Managed\I18N.West.dll</HintPath>
+        </Reference>
+        <Reference Include="Ionic.Zip.Reduced, Version=1.9.1.8, Culture=neutral, PublicKeyToken=edbe51ad942a3f5c">
+          <HintPath>..\..\..\..\Server\RustDedicated_Data\RustDedicated_Data\Managed\Ionic.Zip.Reduced.dll</HintPath>
+        </Reference>
+        <Reference Include="LZ4, Version=1.0.10.93, Culture=neutral, PublicKeyToken=62e1b5ec1eec9bdd">
+          <HintPath>..\..\..\..\Server\RustDedicated_Data\RustDedicated_Data\Managed\LZ4.dll</HintPath>
+        </Reference>
+        <Reference Include="LZ4pn, Version=1.0.10.93, Culture=neutral, PublicKeyToken=62e1b5ec1eec9bdd">
+          <HintPath>..\..\..\..\Server\RustDedicated_Data\RustDedicated_Data\Managed\LZ4pn.dll</HintPath>
+        </Reference>
+        <Reference Include="Melanchall.DryWetMidi, Version=6.0.0.0, Culture=neutral, PublicKeyToken=83d0ffad275219ad">
+          <HintPath>..\..\..\..\Server\RustDedicated_Data\RustDedicated_Data\Managed\Melanchall.DryWetMidi.dll</HintPath>
+        </Reference>
+        <Reference Include="MidiJack, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null">
+          <HintPath>..\..\..\..\Server\RustDedicated_Data\RustDedicated_Data\Managed\MidiJack.dll</HintPath>
+        </Reference>
+        <Reference Include="Mono.Data.Sqlite, Version=4.0.0.0, Culture=neutral, PublicKeyToken=0738eb9f132ed756">
+          <HintPath>..\..\..\..\Server\RustDedicated_Data\RustDedicated_Data\Managed\Mono.Data.Sqlite.dll</HintPath>
+        </Reference>
+        <Reference Include="Mono.Data.Tds, Version=4.0.0.0, Culture=neutral, PublicKeyToken=0738eb9f132ed756">
+          <HintPath>..\..\..\..\Server\RustDedicated_Data\RustDedicated_Data\Managed\Mono.Data.Tds.dll</HintPath>
+        </Reference>
+        <Reference Include="Mono.Posix, Version=4.0.0.0, Culture=neutral, PublicKeyToken=0738eb9f132ed756">
+          <HintPath>..\..\..\..\Server\RustDedicated_Data\RustDedicated_Data\Managed\Mono.Posix.dll</HintPath>
+        </Reference>
+        <Reference Include="Mono.Security, Version=4.0.0.0, Culture=neutral, PublicKeyToken=0738eb9f132ed756">
+          <HintPath>..\..\..\..\Server\RustDedicated_Data\RustDedicated_Data\Managed\Mono.Security.dll</HintPath>
+        </Reference>
+        <Reference Include="Mono.WebBrowser, Version=4.0.0.0, Culture=neutral, PublicKeyToken=0738eb9f132ed756">
+          <HintPath>..\..\..\..\Server\RustDedicated_Data\RustDedicated_Data\Managed\Mono.WebBrowser.dll</HintPath>
+        </Reference>
+        <Reference Include="MP3Sharp, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null">
+          <HintPath>..\..\..\..\Server\RustDedicated_Data\RustDedicated_Data\Managed\MP3Sharp.dll</HintPath>
+        </Reference>
+        <Reference Include="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+          <HintPath>..\..\..\..\Server\RustDedicated_Data\RustDedicated_Data\Managed\mscorlib.dll</HintPath>
+        </Reference>
+        <Reference Include="MySql.Data, Version=6.9.5.0, Culture=neutral, PublicKeyToken=null">
+          <HintPath>..\..\..\..\Server\RustDedicated_Data\RustDedicated_Data\Managed\MySql.Data.dll</HintPath>
+        </Reference>
+        <Reference Include="netstandard, Version=2.0.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51">
+          <HintPath>..\..\..\..\Server\RustDedicated_Data\RustDedicated_Data\Managed\netstandard.dll</HintPath>
+        </Reference>
+        <Reference Include="NewAssembly, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null">
+          <HintPath>..\..\..\..\Server\RustDedicated_Data\RustDedicated_Data\Managed\NewAssembly.dll</HintPath>
+        </Reference>
+        <Reference Include="Novell.Directory.Ldap, Version=4.0.0.0, Culture=neutral, PublicKeyToken=0738eb9f132ed756">
+          <HintPath>..\..\..\..\Server\RustDedicated_Data\RustDedicated_Data\Managed\Novell.Directory.Ldap.dll</HintPath>
+        </Reference>
+        <Reference Include="Oxide.Core, Version=2.0.3999.0, Culture=neutral, PublicKeyToken=null">
+          <HintPath>..\..\..\..\Server\RustDedicated_Data\RustDedicated_Data\Managed\Oxide.Core.dll</HintPath>
+        </Reference>
+        <Reference Include="Oxide.CSharp, Version=2.0.4046.0, Culture=neutral, PublicKeyToken=null">
+          <HintPath>..\..\..\..\Server\RustDedicated_Data\RustDedicated_Data\Managed\Oxide.CSharp.dll</HintPath>
+        </Reference>
+        <Reference Include="Oxide.MySql, Version=2.0.3760.0, Culture=neutral, PublicKeyToken=null">
+          <HintPath>..\..\..\..\Server\RustDedicated_Data\RustDedicated_Data\Managed\Oxide.MySql.dll</HintPath>
+        </Reference>
+        <Reference Include="Oxide.References, Version=2.0.3779.0, Culture=neutral, PublicKeyToken=null">
+          <HintPath>..\..\..\..\Server\RustDedicated_Data\RustDedicated_Data\Managed\Oxide.References.dll</HintPath>
+        </Reference>
+        <Reference Include="Oxide.Rust, Version=2.0.5297.0, Culture=neutral, PublicKeyToken=null">
+          <HintPath>..\..\..\..\Server\RustDedicated_Data\RustDedicated_Data\Managed\Oxide.Rust.dll</HintPath>
+        </Reference>
+        <Reference Include="Oxide.SQLite, Version=2.0.3762.0, Culture=neutral, PublicKeyToken=null">
+          <HintPath>..\..\..\..\Server\RustDedicated_Data\RustDedicated_Data\Managed\Oxide.SQLite.dll</HintPath>
+        </Reference>
+        <Reference Include="Oxide.Unity, Version=2.0.3772.0, Culture=neutral, PublicKeyToken=null">
+          <HintPath>..\..\..\..\Server\RustDedicated_Data\RustDedicated_Data\Managed\Oxide.Unity.dll</HintPath>
+        </Reference>
+        <Reference Include="Rust.Data, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null">
+          <HintPath>..\..\..\..\Server\RustDedicated_Data\RustDedicated_Data\Managed\Rust.Data.dll</HintPath>
+        </Reference>
+        <Reference Include="Rust.Demo, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null">
+          <HintPath>..\..\..\..\Server\RustDedicated_Data\RustDedicated_Data\Managed\Rust.Demo.dll</HintPath>
+        </Reference>
+        <Reference Include="Rust.Global, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null">
+          <HintPath>..\..\..\..\Server\RustDedicated_Data\RustDedicated_Data\Managed\Rust.Global.dll</HintPath>
+        </Reference>
+        <Reference Include="Rust.Harmony, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null">
+          <HintPath>..\..\..\..\Server\RustDedicated_Data\RustDedicated_Data\Managed\Rust.Harmony.dll</HintPath>
+        </Reference>
+        <Reference Include="Rust.Localization, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null">
+          <HintPath>..\..\..\..\Server\RustDedicated_Data\RustDedicated_Data\Managed\Rust.Localization.dll</HintPath>
+        </Reference>
+        <Reference Include="Rust.Platform, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null">
+          <HintPath>..\..\..\..\Server\RustDedicated_Data\RustDedicated_Data\Managed\Rust.Platform.dll</HintPath>
+        </Reference>
+        <Reference Include="Rust.Platform.Common, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null">
+          <HintPath>..\..\..\..\Server\RustDedicated_Data\RustDedicated_Data\Managed\Rust.Platform.Common.dll</HintPath>
+        </Reference>
+        <Reference Include="Rust.Platform.Steam, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null">
+          <HintPath>..\..\..\..\Server\RustDedicated_Data\RustDedicated_Data\Managed\Rust.Platform.Steam.dll</HintPath>
+        </Reference>
+        <Reference Include="Rust.UI, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null">
+          <HintPath>..\..\..\..\Server\RustDedicated_Data\RustDedicated_Data\Managed\Rust.UI.dll</HintPath>
+        </Reference>
+        <Reference Include="Rust.Workshop, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null">
+          <HintPath>..\..\..\..\Server\RustDedicated_Data\RustDedicated_Data\Managed\Rust.Workshop.dll</HintPath>
+        </Reference>
+        <Reference Include="Rust.World, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null">
+          <HintPath>..\..\..\..\Server\RustDedicated_Data\RustDedicated_Data\Managed\Rust.World.dll</HintPath>
+        </Reference>
+        <Reference Include="System" />
+        <Reference Include="System, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+          <HintPath>..\..\..\..\Server\RustDedicated_Data\RustDedicated_Data\Managed\System.dll</HintPath>
+        </Reference>
+        <Reference Include="System.Buffers, Version=4.0.3.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51">
+          <HintPath>..\..\..\..\Server\RustDedicated_Data\RustDedicated_Data\Managed\System.Buffers.dll</HintPath>
+        </Reference>
+        <Reference Include="System.ComponentModel.Composition, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+          <HintPath>..\..\..\..\Server\RustDedicated_Data\RustDedicated_Data\Managed\System.ComponentModel.Composition.dll</HintPath>
+        </Reference>
+        <Reference Include="System.ComponentModel.DataAnnotations, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35">
+          <HintPath>..\..\..\..\Server\RustDedicated_Data\RustDedicated_Data\Managed\System.ComponentModel.DataAnnotations.dll</HintPath>
+        </Reference>
+        <Reference Include="System.Configuration, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+          <HintPath>..\..\..\..\Server\RustDedicated_Data\RustDedicated_Data\Managed\System.Configuration.dll</HintPath>
+        </Reference>
+        <Reference Include="System.Configuration.Install, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+          <HintPath>..\..\..\..\Server\RustDedicated_Data\RustDedicated_Data\Managed\System.Configuration.Install.dll</HintPath>
+        </Reference>
+        <Reference Include="System.Core" />
+        <Reference Include="System.Core, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+          <HintPath>..\..\..\..\Server\RustDedicated_Data\RustDedicated_Data\Managed\System.Core.dll</HintPath>
+        </Reference>
+        <Reference Include="System.Data" />
+        <Reference Include="System.Data, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+          <HintPath>..\..\..\..\Server\RustDedicated_Data\RustDedicated_Data\Managed\System.Data.dll</HintPath>
+        </Reference>
+        <Reference Include="System.Data.SQLite, Version=1.0.97.0, Culture=neutral, PublicKeyToken=db937bc2d44ff139">
+          <HintPath>..\..\..\..\Server\RustDedicated_Data\RustDedicated_Data\Managed\System.Data.SQLite.dll</HintPath>
+        </Reference>
+        <Reference Include="System.Design, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+          <HintPath>..\..\..\..\Server\RustDedicated_Data\RustDedicated_Data\Managed\System.Design.dll</HintPath>
+        </Reference>
+        <Reference Include="System.Diagnostics.StackTrace, Version=4.1.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+          <HintPath>..\..\..\..\Server\RustDedicated_Data\RustDedicated_Data\Managed\System.Diagnostics.StackTrace.dll</HintPath>
+        </Reference>
+        <Reference Include="System.DirectoryServices, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+          <HintPath>..\..\..\..\Server\RustDedicated_Data\RustDedicated_Data\Managed\System.DirectoryServices.dll</HintPath>
+        </Reference>
+        <Reference Include="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+          <HintPath>..\..\..\..\Server\RustDedicated_Data\RustDedicated_Data\Managed\System.Drawing.dll</HintPath>
+        </Reference>
+        <Reference Include="System.Drawing.Design, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+          <HintPath>..\..\..\..\Server\RustDedicated_Data\RustDedicated_Data\Managed\System.Drawing.Design.dll</HintPath>
+        </Reference>
+        <Reference Include="System.EnterpriseServices, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+          <HintPath>..\..\..\..\Server\RustDedicated_Data\RustDedicated_Data\Managed\System.EnterpriseServices.dll</HintPath>
+        </Reference>
+        <Reference Include="System.Globalization.Extensions, Version=4.1.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+          <HintPath>..\..\..\..\Server\RustDedicated_Data\RustDedicated_Data\Managed\System.Globalization.Extensions.dll</HintPath>
+        </Reference>
+        <Reference Include="System.IO.Compression, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+          <HintPath>..\..\..\..\Server\RustDedicated_Data\RustDedicated_Data\Managed\System.IO.Compression.dll</HintPath>
+        </Reference>
+        <Reference Include="System.IO.Compression.FileSystem, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+          <HintPath>..\..\..\..\Server\RustDedicated_Data\RustDedicated_Data\Managed\System.IO.Compression.FileSystem.dll</HintPath>
+        </Reference>
+        <Reference Include="System.Memory, Version=4.0.1.1, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51">
+          <HintPath>..\..\..\..\Server\RustDedicated_Data\RustDedicated_Data\Managed\System.Memory.dll</HintPath>
+        </Reference>
+        <Reference Include="System.Net.Http, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+          <HintPath>..\..\..\..\Server\RustDedicated_Data\RustDedicated_Data\Managed\System.Net.Http.dll</HintPath>
+        </Reference>
+        <Reference Include="System.Numerics, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+          <HintPath>..\..\..\..\Server\RustDedicated_Data\RustDedicated_Data\Managed\System.Numerics.dll</HintPath>
+        </Reference>
+        <Reference Include="System.Numerics.Vectors, Version=4.1.3.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+          <HintPath>..\..\..\..\Server\RustDedicated_Data\RustDedicated_Data\Managed\System.Numerics.Vectors.dll</HintPath>
+        </Reference>
+        <Reference Include="System.Runtime, Version=4.1.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+          <HintPath>..\..\..\..\Server\RustDedicated_Data\RustDedicated_Data\Managed\System.Runtime.dll</HintPath>
+        </Reference>
+        <Reference Include="System.Runtime.CompilerServices.Unsafe, Version=4.0.4.1, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+          <HintPath>..\..\..\..\Server\RustDedicated_Data\RustDedicated_Data\Managed\System.Runtime.CompilerServices.Unsafe.dll</HintPath>
+        </Reference>
+        <Reference Include="System.Runtime.Serialization, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+          <HintPath>..\..\..\..\Server\RustDedicated_Data\RustDedicated_Data\Managed\System.Runtime.Serialization.dll</HintPath>
+        </Reference>
+        <Reference Include="System.Runtime.Serialization.Formatters.Soap, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+          <HintPath>..\..\..\..\Server\RustDedicated_Data\RustDedicated_Data\Managed\System.Runtime.Serialization.Formatters.Soap.dll</HintPath>
+        </Reference>
+        <Reference Include="System.Runtime.Serialization.Xml, Version=4.1.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+          <HintPath>..\..\..\..\Server\RustDedicated_Data\RustDedicated_Data\Managed\System.Runtime.Serialization.Xml.dll</HintPath>
+        </Reference>
+        <Reference Include="System.Security, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+          <HintPath>..\..\..\..\Server\RustDedicated_Data\RustDedicated_Data\Managed\System.Security.dll</HintPath>
+        </Reference>
+        <Reference Include="System.ServiceModel.Internals, Version=0.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+          <HintPath>..\..\..\..\Server\RustDedicated_Data\RustDedicated_Data\Managed\System.ServiceModel.Internals.dll</HintPath>
+        </Reference>
+        <Reference Include="System.Threading.Tasks.Extensions, Version=4.2.0.1, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51">
+          <HintPath>..\..\..\..\Server\RustDedicated_Data\RustDedicated_Data\Managed\System.Threading.Tasks.Extensions.dll</HintPath>
+        </Reference>
+        <Reference Include="System.Transactions, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+          <HintPath>..\..\..\..\Server\RustDedicated_Data\RustDedicated_Data\Managed\System.Transactions.dll</HintPath>
+        </Reference>
+        <Reference Include="System.Web, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+          <HintPath>..\..\..\..\Server\RustDedicated_Data\RustDedicated_Data\Managed\System.Web.dll</HintPath>
+        </Reference>
+        <Reference Include="System.Web.ApplicationServices, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35">
+          <HintPath>..\..\..\..\Server\RustDedicated_Data\RustDedicated_Data\Managed\System.Web.ApplicationServices.dll</HintPath>
+        </Reference>
+        <Reference Include="System.Web.Services, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+          <HintPath>..\..\..\..\Server\RustDedicated_Data\RustDedicated_Data\Managed\System.Web.Services.dll</HintPath>
+        </Reference>
+        <Reference Include="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+          <HintPath>..\..\..\..\Server\RustDedicated_Data\RustDedicated_Data\Managed\System.Windows.Forms.dll</HintPath>
+        </Reference>
+        <Reference Include="System.Xml" />
+        <Reference Include="System.Xml, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+          <HintPath>..\..\..\..\Server\RustDedicated_Data\RustDedicated_Data\Managed\System.Xml.dll</HintPath>
+        </Reference>
+        <Reference Include="System.Xml.Linq, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+          <HintPath>..\..\..\..\Server\RustDedicated_Data\RustDedicated_Data\Managed\System.Xml.Linq.dll</HintPath>
+        </Reference>
+        <Reference Include="System.Xml.XPath.XDocument, Version=4.1.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+          <HintPath>..\..\..\..\Server\RustDedicated_Data\RustDedicated_Data\Managed\System.Xml.XPath.XDocument.dll</HintPath>
+        </Reference>
+        <Reference Include="Unity.Burst, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null">
+          <HintPath>..\..\..\..\Server\RustDedicated_Data\RustDedicated_Data\Managed\Unity.Burst.dll</HintPath>
+        </Reference>
+        <Reference Include="Unity.Burst.Unsafe, Version=4.0.5.0, Culture=neutral, PublicKeyToken=null">
+          <HintPath>..\..\..\..\Server\RustDedicated_Data\RustDedicated_Data\Managed\Unity.Burst.Unsafe.dll</HintPath>
+        </Reference>
+        <Reference Include="Unity.Mathematics, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null">
+          <HintPath>..\..\..\..\Server\RustDedicated_Data\RustDedicated_Data\Managed\Unity.Mathematics.dll</HintPath>
+        </Reference>
+        <Reference Include="Unity.TextMeshPro, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null">
+          <HintPath>..\..\..\..\Server\RustDedicated_Data\RustDedicated_Data\Managed\Unity.TextMeshPro.dll</HintPath>
+        </Reference>
+        <Reference Include="UnityEngine, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null">
+          <HintPath>..\..\..\..\Server\RustDedicated_Data\RustDedicated_Data\Managed\UnityEngine.dll</HintPath>
+        </Reference>
+        <Reference Include="UnityEngine.AccessibilityModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null">
+          <HintPath>..\..\..\..\Server\RustDedicated_Data\RustDedicated_Data\Managed\UnityEngine.AccessibilityModule.dll</HintPath>
+        </Reference>
+        <Reference Include="UnityEngine.AIModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null">
+          <HintPath>..\..\..\..\Server\RustDedicated_Data\RustDedicated_Data\Managed\UnityEngine.AIModule.dll</HintPath>
+        </Reference>
+        <Reference Include="UnityEngine.AndroidJNIModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null">
+          <HintPath>..\..\..\..\Server\RustDedicated_Data\RustDedicated_Data\Managed\UnityEngine.AndroidJNIModule.dll</HintPath>
+        </Reference>
+        <Reference Include="UnityEngine.AnimationModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null">
+          <HintPath>..\..\..\..\Server\RustDedicated_Data\RustDedicated_Data\Managed\UnityEngine.AnimationModule.dll</HintPath>
+        </Reference>
+        <Reference Include="UnityEngine.ARModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null">
+          <HintPath>..\..\..\..\Server\RustDedicated_Data\RustDedicated_Data\Managed\UnityEngine.ARModule.dll</HintPath>
+        </Reference>
+        <Reference Include="UnityEngine.AssetBundleModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null">
+          <HintPath>..\..\..\..\Server\RustDedicated_Data\RustDedicated_Data\Managed\UnityEngine.AssetBundleModule.dll</HintPath>
+        </Reference>
+        <Reference Include="UnityEngine.AudioModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null">
+          <HintPath>..\..\..\..\Server\RustDedicated_Data\RustDedicated_Data\Managed\UnityEngine.AudioModule.dll</HintPath>
+        </Reference>
+        <Reference Include="UnityEngine.ClothModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null">
+          <HintPath>..\..\..\..\Server\RustDedicated_Data\RustDedicated_Data\Managed\UnityEngine.ClothModule.dll</HintPath>
+        </Reference>
+        <Reference Include="UnityEngine.ClusterInputModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null">
+          <HintPath>..\..\..\..\Server\RustDedicated_Data\RustDedicated_Data\Managed\UnityEngine.ClusterInputModule.dll</HintPath>
+        </Reference>
+        <Reference Include="UnityEngine.ClusterRendererModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null">
+          <HintPath>..\..\..\..\Server\RustDedicated_Data\RustDedicated_Data\Managed\UnityEngine.ClusterRendererModule.dll</HintPath>
+        </Reference>
+        <Reference Include="UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null">
+          <HintPath>..\..\..\..\Server\RustDedicated_Data\RustDedicated_Data\Managed\UnityEngine.CoreModule.dll</HintPath>
+        </Reference>
+        <Reference Include="UnityEngine.CrashReportingModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null">
+          <HintPath>..\..\..\..\Server\RustDedicated_Data\RustDedicated_Data\Managed\UnityEngine.CrashReportingModule.dll</HintPath>
+        </Reference>
+        <Reference Include="UnityEngine.DirectorModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null">
+          <HintPath>..\..\..\..\Server\RustDedicated_Data\RustDedicated_Data\Managed\UnityEngine.DirectorModule.dll</HintPath>
+        </Reference>
+        <Reference Include="UnityEngine.DSPGraphModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null">
+          <HintPath>..\..\..\..\Server\RustDedicated_Data\RustDedicated_Data\Managed\UnityEngine.DSPGraphModule.dll</HintPath>
+        </Reference>
+        <Reference Include="UnityEngine.GameCenterModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null">
+          <HintPath>..\..\..\..\Server\RustDedicated_Data\RustDedicated_Data\Managed\UnityEngine.GameCenterModule.dll</HintPath>
+        </Reference>
+        <Reference Include="UnityEngine.GridModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null">
+          <HintPath>..\..\..\..\Server\RustDedicated_Data\RustDedicated_Data\Managed\UnityEngine.GridModule.dll</HintPath>
+        </Reference>
+        <Reference Include="UnityEngine.HotReloadModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null">
+          <HintPath>..\..\..\..\Server\RustDedicated_Data\RustDedicated_Data\Managed\UnityEngine.HotReloadModule.dll</HintPath>
+        </Reference>
+        <Reference Include="UnityEngine.ImageConversionModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null">
+          <HintPath>..\..\..\..\Server\RustDedicated_Data\RustDedicated_Data\Managed\UnityEngine.ImageConversionModule.dll</HintPath>
+        </Reference>
+        <Reference Include="UnityEngine.IMGUIModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null">
+          <HintPath>..\..\..\..\Server\RustDedicated_Data\RustDedicated_Data\Managed\UnityEngine.IMGUIModule.dll</HintPath>
+        </Reference>
+        <Reference Include="UnityEngine.InputLegacyModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null">
+          <HintPath>..\..\..\..\Server\RustDedicated_Data\RustDedicated_Data\Managed\UnityEngine.InputLegacyModule.dll</HintPath>
+        </Reference>
+        <Reference Include="UnityEngine.InputModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null">
+          <HintPath>..\..\..\..\Server\RustDedicated_Data\RustDedicated_Data\Managed\UnityEngine.InputModule.dll</HintPath>
+        </Reference>
+        <Reference Include="UnityEngine.JSONSerializeModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null">
+          <HintPath>..\..\..\..\Server\RustDedicated_Data\RustDedicated_Data\Managed\UnityEngine.JSONSerializeModule.dll</HintPath>
+        </Reference>
+        <Reference Include="UnityEngine.LocalizationModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null">
+          <HintPath>..\..\..\..\Server\RustDedicated_Data\RustDedicated_Data\Managed\UnityEngine.LocalizationModule.dll</HintPath>
+        </Reference>
+        <Reference Include="UnityEngine.ParticleSystemModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null">
+          <HintPath>..\..\..\..\Server\RustDedicated_Data\RustDedicated_Data\Managed\UnityEngine.ParticleSystemModule.dll</HintPath>
+        </Reference>
+        <Reference Include="UnityEngine.PerformanceReportingModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null">
+          <HintPath>..\..\..\..\Server\RustDedicated_Data\RustDedicated_Data\Managed\UnityEngine.PerformanceReportingModule.dll</HintPath>
+        </Reference>
+        <Reference Include="UnityEngine.Physics2DModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null">
+          <HintPath>..\..\..\..\Server\RustDedicated_Data\RustDedicated_Data\Managed\UnityEngine.Physics2DModule.dll</HintPath>
+        </Reference>
+        <Reference Include="UnityEngine.PhysicsModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null">
+          <HintPath>..\..\..\..\Server\RustDedicated_Data\RustDedicated_Data\Managed\UnityEngine.PhysicsModule.dll</HintPath>
+        </Reference>
+        <Reference Include="UnityEngine.ProfilerModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null">
+          <HintPath>..\..\..\..\Server\RustDedicated_Data\RustDedicated_Data\Managed\UnityEngine.ProfilerModule.dll</HintPath>
+        </Reference>
+        <Reference Include="UnityEngine.ScreenCaptureModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null">
+          <HintPath>..\..\..\..\Server\RustDedicated_Data\RustDedicated_Data\Managed\UnityEngine.ScreenCaptureModule.dll</HintPath>
+        </Reference>
+        <Reference Include="UnityEngine.SharedInternalsModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null">
+          <HintPath>..\..\..\..\Server\RustDedicated_Data\RustDedicated_Data\Managed\UnityEngine.SharedInternalsModule.dll</HintPath>
+        </Reference>
+        <Reference Include="UnityEngine.SpriteMaskModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null">
+          <HintPath>..\..\..\..\Server\RustDedicated_Data\RustDedicated_Data\Managed\UnityEngine.SpriteMaskModule.dll</HintPath>
+        </Reference>
+        <Reference Include="UnityEngine.SpriteShapeModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null">
+          <HintPath>..\..\..\..\Server\RustDedicated_Data\RustDedicated_Data\Managed\UnityEngine.SpriteShapeModule.dll</HintPath>
+        </Reference>
+        <Reference Include="UnityEngine.StreamingModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null">
+          <HintPath>..\..\..\..\Server\RustDedicated_Data\RustDedicated_Data\Managed\UnityEngine.StreamingModule.dll</HintPath>
+        </Reference>
+        <Reference Include="UnityEngine.SubstanceModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null">
+          <HintPath>..\..\..\..\Server\RustDedicated_Data\RustDedicated_Data\Managed\UnityEngine.SubstanceModule.dll</HintPath>
+        </Reference>
+        <Reference Include="UnityEngine.SubsystemsModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null">
+          <HintPath>..\..\..\..\Server\RustDedicated_Data\RustDedicated_Data\Managed\UnityEngine.SubsystemsModule.dll</HintPath>
+        </Reference>
+        <Reference Include="UnityEngine.TerrainModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null">
+          <HintPath>..\..\..\..\Server\RustDedicated_Data\RustDedicated_Data\Managed\UnityEngine.TerrainModule.dll</HintPath>
+        </Reference>
+        <Reference Include="UnityEngine.TerrainPhysicsModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null">
+          <HintPath>..\..\..\..\Server\RustDedicated_Data\RustDedicated_Data\Managed\UnityEngine.TerrainPhysicsModule.dll</HintPath>
+        </Reference>
+        <Reference Include="UnityEngine.TextCoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null">
+          <HintPath>..\..\..\..\Server\RustDedicated_Data\RustDedicated_Data\Managed\UnityEngine.TextCoreModule.dll</HintPath>
+        </Reference>
+        <Reference Include="UnityEngine.TextRenderingModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null">
+          <HintPath>..\..\..\..\Server\RustDedicated_Data\RustDedicated_Data\Managed\UnityEngine.TextRenderingModule.dll</HintPath>
+        </Reference>
+        <Reference Include="UnityEngine.TilemapModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null">
+          <HintPath>..\..\..\..\Server\RustDedicated_Data\RustDedicated_Data\Managed\UnityEngine.TilemapModule.dll</HintPath>
+        </Reference>
+        <Reference Include="UnityEngine.TLSModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null">
+          <HintPath>..\..\..\..\Server\RustDedicated_Data\RustDedicated_Data\Managed\UnityEngine.TLSModule.dll</HintPath>
+        </Reference>
+        <Reference Include="UnityEngine.UI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null">
+          <HintPath>..\..\..\..\Server\RustDedicated_Data\RustDedicated_Data\Managed\UnityEngine.UI.dll</HintPath>
+        </Reference>
+        <Reference Include="UnityEngine.UIElementsModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null">
+          <HintPath>..\..\..\..\Server\RustDedicated_Data\RustDedicated_Data\Managed\UnityEngine.UIElementsModule.dll</HintPath>
+        </Reference>
+        <Reference Include="UnityEngine.UIModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null">
+          <HintPath>..\..\..\..\Server\RustDedicated_Data\RustDedicated_Data\Managed\UnityEngine.UIModule.dll</HintPath>
+        </Reference>
+        <Reference Include="UnityEngine.UmbraModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null">
+          <HintPath>..\..\..\..\Server\RustDedicated_Data\RustDedicated_Data\Managed\UnityEngine.UmbraModule.dll</HintPath>
+        </Reference>
+        <Reference Include="UnityEngine.UNETModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null">
+          <HintPath>..\..\..\..\Server\RustDedicated_Data\RustDedicated_Data\Managed\UnityEngine.UNETModule.dll</HintPath>
+        </Reference>
+        <Reference Include="UnityEngine.UnityAnalyticsModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null">
+          <HintPath>..\..\..\..\Server\RustDedicated_Data\RustDedicated_Data\Managed\UnityEngine.UnityAnalyticsModule.dll</HintPath>
+        </Reference>
+        <Reference Include="UnityEngine.UnityConnectModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null">
+          <HintPath>..\..\..\..\Server\RustDedicated_Data\RustDedicated_Data\Managed\UnityEngine.UnityConnectModule.dll</HintPath>
+        </Reference>
+        <Reference Include="UnityEngine.UnityTestProtocolModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null">
+          <HintPath>..\..\..\..\Server\RustDedicated_Data\RustDedicated_Data\Managed\UnityEngine.UnityTestProtocolModule.dll</HintPath>
+        </Reference>
+        <Reference Include="UnityEngine.UnityWebRequestAssetBundleModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null">
+          <HintPath>..\..\..\..\Server\RustDedicated_Data\RustDedicated_Data\Managed\UnityEngine.UnityWebRequestAssetBundleModule.dll</HintPath>
+        </Reference>
+        <Reference Include="UnityEngine.UnityWebRequestAudioModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null">
+          <HintPath>..\..\..\..\Server\RustDedicated_Data\RustDedicated_Data\Managed\UnityEngine.UnityWebRequestAudioModule.dll</HintPath>
+        </Reference>
+        <Reference Include="UnityEngine.UnityWebRequestModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null">
+          <HintPath>..\..\..\..\Server\RustDedicated_Data\RustDedicated_Data\Managed\UnityEngine.UnityWebRequestModule.dll</HintPath>
+        </Reference>
+        <Reference Include="UnityEngine.UnityWebRequestTextureModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null">
+          <HintPath>..\..\..\..\Server\RustDedicated_Data\RustDedicated_Data\Managed\UnityEngine.UnityWebRequestTextureModule.dll</HintPath>
+        </Reference>
+        <Reference Include="UnityEngine.UnityWebRequestWWWModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null">
+          <HintPath>..\..\..\..\Server\RustDedicated_Data\RustDedicated_Data\Managed\UnityEngine.UnityWebRequestWWWModule.dll</HintPath>
+        </Reference>
+        <Reference Include="UnityEngine.VehiclesModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null">
+          <HintPath>..\..\..\..\Server\RustDedicated_Data\RustDedicated_Data\Managed\UnityEngine.VehiclesModule.dll</HintPath>
+        </Reference>
+        <Reference Include="UnityEngine.VFXModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null">
+          <HintPath>..\..\..\..\Server\RustDedicated_Data\RustDedicated_Data\Managed\UnityEngine.VFXModule.dll</HintPath>
+        </Reference>
+        <Reference Include="UnityEngine.VideoModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null">
+          <HintPath>..\..\..\..\Server\RustDedicated_Data\RustDedicated_Data\Managed\UnityEngine.VideoModule.dll</HintPath>
+        </Reference>
+        <Reference Include="UnityEngine.VRModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null">
+          <HintPath>..\..\..\..\Server\RustDedicated_Data\RustDedicated_Data\Managed\UnityEngine.VRModule.dll</HintPath>
+        </Reference>
+        <Reference Include="UnityEngine.WindModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null">
+          <HintPath>..\..\..\..\Server\RustDedicated_Data\RustDedicated_Data\Managed\UnityEngine.WindModule.dll</HintPath>
+        </Reference>
+        <Reference Include="UnityEngine.XRModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null">
+          <HintPath>..\..\..\..\Server\RustDedicated_Data\RustDedicated_Data\Managed\UnityEngine.XRModule.dll</HintPath>
+        </Reference>
     </ItemGroup>
     <ItemGroup>
-        <Compile Include="Class1.cs"/>
-        <Compile Include="Properties\AssemblyInfo.cs"/>
+        <Compile Include="..\..\..\PluginsWorkspace\Plugins\obj\Debug\.NETFramework,Version=v4.6.1.AssemblyAttributes.cs">
+          <Link>obj\Debug\.NETFramework,Version=v4.6.1.AssemblyAttributes.cs</Link>
+        </Compile>
+        <Compile Include="..\..\..\PluginsWorkspace\Plugins\obj\Debug\.NETFramework,Version=v4.8.AssemblyAttributes.cs">
+          <Link>obj\Debug\.NETFramework,Version=v4.8.AssemblyAttributes.cs</Link>
+        </Compile>
+        <Compile Include="..\..\..\PluginsWorkspace\Plugins\Properties\AssemblyInfo.cs">
+          <Link>Properties\AssemblyInfo.cs</Link>
+        </Compile>
+        <Compile Include="Class1.cs" />
+        <Compile Include="Examples\Airstrike.cs" />
+        <Compile Include="Examples\AntiNPC.cs" />
+        <Compile Include="Examples\BetterChat.cs" />
+        <Compile Include="Examples\Build.cs" />
+        <Compile Include="Examples\BuildRevert.cs" />
+        <Compile Include="Examples\Chute.cs" />
+        <Compile Include="Examples\CopterSpawns.cs" />
+        <Compile Include="Examples\CraftingController.cs" />
+        <Compile Include="Examples\CustomSpawnPoints.cs" />
+        <Compile Include="Examples\Economics.cs" />
+        <Compile Include="Examples\EnhancedHammer.cs" />
+        <Compile Include="Examples\FauxClip.cs" />
+        <Compile Include="Examples\HideMapMarker.cs" />
+        <Compile Include="Examples\HudBar.cs" />
+        <Compile Include="Examples\HuntRPG.cs" />
+        <Compile Include="Examples\ImageLibrary.cs" />
+        <Compile Include="Examples\InfoMenu.cs" />
+        <Compile Include="Examples\InventoryRestore.cs" />
+        <Compile Include="Examples\IQChat.cs" />
+        <Compile Include="Examples\KitsGraphical1.cs" />
+        <Compile Include="Examples\MainMenu.cs" />
+        <Compile Include="Examples\MapMyAirDrop.cs" />
+        <Compile Include="Examples\MenuRevolve.cs" />
+        <Compile Include="Examples\MultiEvents.cs" />
+        <Compile Include="Examples\NoEscape.cs" />
+        <Compile Include="Examples\OurServers.cs" />
+        <Compile Include="Examples\PersonalController.cs" />
+        <Compile Include="Examples\PrefabSniffer.cs" />
+        <Compile Include="Examples\RaidEnhancer.cs" />
+        <Compile Include="Examples\RandomSpawnRadius.cs" />
+        <Compile Include="Examples\RespawnKits.cs" />
+        <Compile Include="Examples\SkinSystem.cs" />
+        <Compile Include="Examples\Telekinesis.cs" />
+        <Compile Include="Examples\Top.cs" />
+        <Compile Include="Examples\Vanish.cs" />
+        <Compile Include="Examples\VehicleLicence.cs" />
+        <Compile Include="Examples\WipeSchedule.cs" />
+        <Compile Include="Examples\WipeTimer.cs" />
+        <Compile Include="Properties\AssemblyInfo.cs" />
+        <Compile Include="SpriteSniffer.cs" />
+        <Compile Include="Готовые функции\dlya_npts.cs" />
+        <Compile Include="Готовые функции\IQFakeActive.cs" />
+        <Compile Include="Готовые функции\Outline.cs" />
+        <Compile Include="Готовые функции\Patterns Rider.cs" />
+        <Compile Include="Готовые функции\PosToMap.cs" />
+        <Compile Include="Другое\#0001(SmartShop)\SmartShop.cs" />
+        <Compile Include="Завершенные\Christmas.cs" />
+        <Compile Include="Завершенные\DataBase.cs" />
+        <Compile Include="Завершенные\DiamondDrop.cs" />
+        <Compile Include="Завершенные\Factory.cs" />
+        <Compile Include="Завершенные\FoxholeUI.cs" />
+        <Compile Include="Завершенные\Fraction.cs" />
+        <Compile Include="Завершенные\Hud.cs" />
+        <Compile Include="Завершенные\HudRanked.cs" />
+        <Compile Include="Завершенные\Inventory.cs" />
+        <Compile Include="Завершенные\NTeleportation.cs" />
+        <Compile Include="Завершенные\PrivateHorse.cs" />
+        <Compile Include="Завершенные\SantaGifts.cs" />
+        <Compile Include="Завершенные\SantaIvent.cs" />
+        <Compile Include="Завершенные\SpawnMenu.cs" />
+        <Compile Include="Завершенные\TableList.cs" />
+        <Compile Include="Завершенные\TpMenu.cs" />
     </ItemGroup>
-    <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets"/>
+    <ItemGroup>
+      <Content Include="..\..\..\PluginsWorkspace\Plugins\bin\Debug\ApexAI.dll">
+        <Link>bin\Debug\ApexAI.dll</Link>
+      </Content>
+      <Content Include="..\..\..\PluginsWorkspace\Plugins\bin\Debug\ApexSerialization.dll">
+        <Link>bin\Debug\ApexSerialization.dll</Link>
+      </Content>
+      <Content Include="..\..\..\PluginsWorkspace\Plugins\bin\Debug\ApexShared.dll">
+        <Link>bin\Debug\ApexShared.dll</Link>
+      </Content>
+      <Content Include="..\..\..\PluginsWorkspace\Plugins\bin\Debug\Assembly-CSharp-firstpass.dll">
+        <Link>bin\Debug\Assembly-CSharp-firstpass.dll</Link>
+      </Content>
+      <Content Include="..\..\..\PluginsWorkspace\Plugins\bin\Debug\Assembly-CSharp.dll">
+        <Link>bin\Debug\Assembly-CSharp.dll</Link>
+      </Content>
+      <Content Include="..\..\..\PluginsWorkspace\Plugins\bin\Debug\com.unity.postprocessing.Runtime.dll">
+        <Link>bin\Debug\com.unity.postprocessing.Runtime.dll</Link>
+      </Content>
+      <Content Include="..\..\..\PluginsWorkspace\Plugins\bin\Debug\EasyAntiCheat.Server.dll">
+        <Link>bin\Debug\EasyAntiCheat.Server.dll</Link>
+      </Content>
+      <Content Include="..\..\..\PluginsWorkspace\Plugins\bin\Debug\Facepunch.Console.dll">
+        <Link>bin\Debug\Facepunch.Console.dll</Link>
+      </Content>
+      <Content Include="..\..\..\PluginsWorkspace\Plugins\bin\Debug\Facepunch.Input.dll">
+        <Link>bin\Debug\Facepunch.Input.dll</Link>
+      </Content>
+      <Content Include="..\..\..\PluginsWorkspace\Plugins\bin\Debug\Facepunch.Network.dll">
+        <Link>bin\Debug\Facepunch.Network.dll</Link>
+      </Content>
+      <Content Include="..\..\..\PluginsWorkspace\Plugins\bin\Debug\Facepunch.Raknet.dll">
+        <Link>bin\Debug\Facepunch.Raknet.dll</Link>
+      </Content>
+      <Content Include="..\..\..\PluginsWorkspace\Plugins\bin\Debug\Facepunch.Rcon.dll">
+        <Link>bin\Debug\Facepunch.Rcon.dll</Link>
+      </Content>
+      <Content Include="..\..\..\PluginsWorkspace\Plugins\bin\Debug\Facepunch.Skeleton.dll">
+        <Link>bin\Debug\Facepunch.Skeleton.dll</Link>
+      </Content>
+      <Content Include="..\..\..\PluginsWorkspace\Plugins\bin\Debug\Facepunch.Sqlite.dll">
+        <Link>bin\Debug\Facepunch.Sqlite.dll</Link>
+      </Content>
+      <Content Include="..\..\..\PluginsWorkspace\Plugins\bin\Debug\Facepunch.SteamNetworking.dll">
+        <Link>bin\Debug\Facepunch.SteamNetworking.dll</Link>
+      </Content>
+      <Content Include="..\..\..\PluginsWorkspace\Plugins\bin\Debug\Facepunch.Steamworks.Win64.dll">
+        <Link>bin\Debug\Facepunch.Steamworks.Win64.dll</Link>
+      </Content>
+      <Content Include="..\..\..\PluginsWorkspace\Plugins\bin\Debug\Facepunch.System.dll">
+        <Link>bin\Debug\Facepunch.System.dll</Link>
+      </Content>
+      <Content Include="..\..\..\PluginsWorkspace\Plugins\bin\Debug\Facepunch.Unity.dll">
+        <Link>bin\Debug\Facepunch.Unity.dll</Link>
+      </Content>
+      <Content Include="..\..\..\PluginsWorkspace\Plugins\bin\Debug\Facepunch.UnityEngine.dll">
+        <Link>bin\Debug\Facepunch.UnityEngine.dll</Link>
+      </Content>
+      <Content Include="..\..\..\PluginsWorkspace\Plugins\bin\Debug\Fleck.dll">
+        <Link>bin\Debug\Fleck.dll</Link>
+      </Content>
+      <Content Include="..\..\..\PluginsWorkspace\Plugins\bin\Debug\GA.dll">
+        <Link>bin\Debug\GA.dll</Link>
+      </Content>
+      <Content Include="..\..\..\PluginsWorkspace\Plugins\bin\Debug\Ionic.Zip.Reduced.dll">
+        <Link>bin\Debug\Ionic.Zip.Reduced.dll</Link>
+      </Content>
+      <Content Include="..\..\..\PluginsWorkspace\Plugins\bin\Debug\LZ4.dll">
+        <Link>bin\Debug\LZ4.dll</Link>
+      </Content>
+      <Content Include="..\..\..\PluginsWorkspace\Plugins\bin\Debug\LZ4pn.dll">
+        <Link>bin\Debug\LZ4pn.dll</Link>
+      </Content>
+      <Content Include="..\..\..\PluginsWorkspace\Plugins\bin\Debug\Microsoft.Win32.Primitives.dll">
+        <Link>bin\Debug\Microsoft.Win32.Primitives.dll</Link>
+      </Content>
+      <Content Include="..\..\..\PluginsWorkspace\Plugins\bin\Debug\Mono.Data.Tds.dll">
+        <Link>bin\Debug\Mono.Data.Tds.dll</Link>
+      </Content>
+      <Content Include="..\..\..\PluginsWorkspace\Plugins\bin\Debug\mscorlib.dll">
+        <Link>bin\Debug\mscorlib.dll</Link>
+      </Content>
+      <Content Include="..\..\..\PluginsWorkspace\Plugins\bin\Debug\MySql.Data.dll">
+        <Link>bin\Debug\MySql.Data.dll</Link>
+      </Content>
+      <Content Include="..\..\..\PluginsWorkspace\Plugins\bin\Debug\netstandard.dll">
+        <Link>bin\Debug\netstandard.dll</Link>
+      </Content>
+      <Content Include="..\..\..\PluginsWorkspace\Plugins\bin\Debug\NewAssembly.dll">
+        <Link>bin\Debug\NewAssembly.dll</Link>
+      </Content>
+      <Content Include="..\..\..\PluginsWorkspace\Plugins\bin\Debug\Newtonsoft.Json.dll">
+        <Link>bin\Debug\Newtonsoft.Json.dll</Link>
+      </Content>
+      <Content Include="..\..\..\PluginsWorkspace\Plugins\bin\Debug\Oxide.Core.dll">
+        <Link>bin\Debug\Oxide.Core.dll</Link>
+      </Content>
+      <Content Include="..\..\..\PluginsWorkspace\Plugins\bin\Debug\Oxide.CSharp.dll">
+        <Link>bin\Debug\Oxide.CSharp.dll</Link>
+      </Content>
+      <Content Include="..\..\..\PluginsWorkspace\Plugins\bin\Debug\Oxide.Ext.Discord.dll">
+        <Link>bin\Debug\Oxide.Ext.Discord.dll</Link>
+      </Content>
+      <Content Include="..\..\..\PluginsWorkspace\Plugins\bin\Debug\Oxide.MySql.dll">
+        <Link>bin\Debug\Oxide.MySql.dll</Link>
+      </Content>
+      <Content Include="..\..\..\PluginsWorkspace\Plugins\bin\Debug\Oxide.Plugins.dll">
+        <Link>bin\Debug\Oxide.Plugins.dll</Link>
+      </Content>
+      <Content Include="..\..\..\PluginsWorkspace\Plugins\bin\Debug\Oxide.Plugins.pdb">
+        <Link>bin\Debug\Oxide.Plugins.pdb</Link>
+      </Content>
+      <Content Include="..\..\..\PluginsWorkspace\Plugins\bin\Debug\Oxide.References.dll">
+        <Link>bin\Debug\Oxide.References.dll</Link>
+      </Content>
+      <Content Include="..\..\..\PluginsWorkspace\Plugins\bin\Debug\Oxide.Rust.dll">
+        <Link>bin\Debug\Oxide.Rust.dll</Link>
+      </Content>
+      <Content Include="..\..\..\PluginsWorkspace\Plugins\bin\Debug\Oxide.SQLite.dll">
+        <Link>bin\Debug\Oxide.SQLite.dll</Link>
+      </Content>
+      <Content Include="..\..\..\PluginsWorkspace\Plugins\bin\Debug\Oxide.Unity.dll">
+        <Link>bin\Debug\Oxide.Unity.dll</Link>
+      </Content>
+      <Content Include="..\..\..\PluginsWorkspace\Plugins\bin\Debug\Rust.Data.dll">
+        <Link>bin\Debug\Rust.Data.dll</Link>
+      </Content>
+      <Content Include="..\..\..\PluginsWorkspace\Plugins\bin\Debug\Rust.Demo.dll">
+        <Link>bin\Debug\Rust.Demo.dll</Link>
+      </Content>
+      <Content Include="..\..\..\PluginsWorkspace\Plugins\bin\Debug\Rust.Global.dll">
+        <Link>bin\Debug\Rust.Global.dll</Link>
+      </Content>
+      <Content Include="..\..\..\PluginsWorkspace\Plugins\bin\Debug\Rust.Localization.dll">
+        <Link>bin\Debug\Rust.Localization.dll</Link>
+      </Content>
+      <Content Include="..\..\..\PluginsWorkspace\Plugins\bin\Debug\Rust.Platform.Common.dll">
+        <Link>bin\Debug\Rust.Platform.Common.dll</Link>
+      </Content>
+      <Content Include="..\..\..\PluginsWorkspace\Plugins\bin\Debug\Rust.Platform.dll">
+        <Link>bin\Debug\Rust.Platform.dll</Link>
+      </Content>
+      <Content Include="..\..\..\PluginsWorkspace\Plugins\bin\Debug\Rust.Platform.Steam.dll">
+        <Link>bin\Debug\Rust.Platform.Steam.dll</Link>
+      </Content>
+      <Content Include="..\..\..\PluginsWorkspace\Plugins\bin\Debug\Rust.UI.dll">
+        <Link>bin\Debug\Rust.UI.dll</Link>
+      </Content>
+      <Content Include="..\..\..\PluginsWorkspace\Plugins\bin\Debug\Rust.Workshop.dll">
+        <Link>bin\Debug\Rust.Workshop.dll</Link>
+      </Content>
+      <Content Include="..\..\..\PluginsWorkspace\Plugins\bin\Debug\Rust.World.dll">
+        <Link>bin\Debug\Rust.World.dll</Link>
+      </Content>
+      <Content Include="..\..\..\PluginsWorkspace\Plugins\bin\Debug\System.AppContext.dll">
+        <Link>bin\Debug\System.AppContext.dll</Link>
+      </Content>
+      <Content Include="..\..\..\PluginsWorkspace\Plugins\bin\Debug\System.Buffers.dll">
+        <Link>bin\Debug\System.Buffers.dll</Link>
+      </Content>
+      <Content Include="..\..\..\PluginsWorkspace\Plugins\bin\Debug\System.Collections.Concurrent.dll">
+        <Link>bin\Debug\System.Collections.Concurrent.dll</Link>
+      </Content>
+      <Content Include="..\..\..\PluginsWorkspace\Plugins\bin\Debug\System.Collections.dll">
+        <Link>bin\Debug\System.Collections.dll</Link>
+      </Content>
+      <Content Include="..\..\..\PluginsWorkspace\Plugins\bin\Debug\System.Collections.NonGeneric.dll">
+        <Link>bin\Debug\System.Collections.NonGeneric.dll</Link>
+      </Content>
+      <Content Include="..\..\..\PluginsWorkspace\Plugins\bin\Debug\System.Collections.Specialized.dll">
+        <Link>bin\Debug\System.Collections.Specialized.dll</Link>
+      </Content>
+      <Content Include="..\..\..\PluginsWorkspace\Plugins\bin\Debug\System.ComponentModel.dll">
+        <Link>bin\Debug\System.ComponentModel.dll</Link>
+      </Content>
+      <Content Include="..\..\..\PluginsWorkspace\Plugins\bin\Debug\System.ComponentModel.EventBasedAsync.dll">
+        <Link>bin\Debug\System.ComponentModel.EventBasedAsync.dll</Link>
+      </Content>
+      <Content Include="..\..\..\PluginsWorkspace\Plugins\bin\Debug\System.ComponentModel.Primitives.dll">
+        <Link>bin\Debug\System.ComponentModel.Primitives.dll</Link>
+      </Content>
+      <Content Include="..\..\..\PluginsWorkspace\Plugins\bin\Debug\System.ComponentModel.TypeConverter.dll">
+        <Link>bin\Debug\System.ComponentModel.TypeConverter.dll</Link>
+      </Content>
+      <Content Include="..\..\..\PluginsWorkspace\Plugins\bin\Debug\System.Console.dll">
+        <Link>bin\Debug\System.Console.dll</Link>
+      </Content>
+      <Content Include="..\..\..\PluginsWorkspace\Plugins\bin\Debug\System.Data.Common.dll">
+        <Link>bin\Debug\System.Data.Common.dll</Link>
+      </Content>
+      <Content Include="..\..\..\PluginsWorkspace\Plugins\bin\Debug\System.Data.dll">
+        <Link>bin\Debug\System.Data.dll</Link>
+      </Content>
+      <Content Include="..\..\..\PluginsWorkspace\Plugins\bin\Debug\System.Data.SQLite.dll">
+        <Link>bin\Debug\System.Data.SQLite.dll</Link>
+      </Content>
+      <Content Include="..\..\..\PluginsWorkspace\Plugins\bin\Debug\System.Diagnostics.Contracts.dll">
+        <Link>bin\Debug\System.Diagnostics.Contracts.dll</Link>
+      </Content>
+      <Content Include="..\..\..\PluginsWorkspace\Plugins\bin\Debug\System.Diagnostics.Debug.dll">
+        <Link>bin\Debug\System.Diagnostics.Debug.dll</Link>
+      </Content>
+      <Content Include="..\..\..\PluginsWorkspace\Plugins\bin\Debug\System.Diagnostics.FileVersionInfo.dll">
+        <Link>bin\Debug\System.Diagnostics.FileVersionInfo.dll</Link>
+      </Content>
+      <Content Include="..\..\..\PluginsWorkspace\Plugins\bin\Debug\System.Diagnostics.Process.dll">
+        <Link>bin\Debug\System.Diagnostics.Process.dll</Link>
+      </Content>
+      <Content Include="..\..\..\PluginsWorkspace\Plugins\bin\Debug\System.Diagnostics.StackTrace.dll">
+        <Link>bin\Debug\System.Diagnostics.StackTrace.dll</Link>
+      </Content>
+      <Content Include="..\..\..\PluginsWorkspace\Plugins\bin\Debug\System.Diagnostics.TextWriterTraceListener.dll">
+        <Link>bin\Debug\System.Diagnostics.TextWriterTraceListener.dll</Link>
+      </Content>
+      <Content Include="..\..\..\PluginsWorkspace\Plugins\bin\Debug\System.Diagnostics.Tools.dll">
+        <Link>bin\Debug\System.Diagnostics.Tools.dll</Link>
+      </Content>
+      <Content Include="..\..\..\PluginsWorkspace\Plugins\bin\Debug\System.Diagnostics.TraceSource.dll">
+        <Link>bin\Debug\System.Diagnostics.TraceSource.dll</Link>
+      </Content>
+      <Content Include="..\..\..\PluginsWorkspace\Plugins\bin\Debug\System.Diagnostics.Tracing.dll">
+        <Link>bin\Debug\System.Diagnostics.Tracing.dll</Link>
+      </Content>
+      <Content Include="..\..\..\PluginsWorkspace\Plugins\bin\Debug\System.dll">
+        <Link>bin\Debug\System.dll</Link>
+      </Content>
+      <Content Include="..\..\..\PluginsWorkspace\Plugins\bin\Debug\System.Drawing.dll">
+        <Link>bin\Debug\System.Drawing.dll</Link>
+      </Content>
+      <Content Include="..\..\..\PluginsWorkspace\Plugins\bin\Debug\System.Drawing.Primitives.dll">
+        <Link>bin\Debug\System.Drawing.Primitives.dll</Link>
+      </Content>
+      <Content Include="..\..\..\PluginsWorkspace\Plugins\bin\Debug\System.Dynamic.Runtime.dll">
+        <Link>bin\Debug\System.Dynamic.Runtime.dll</Link>
+      </Content>
+      <Content Include="..\..\..\PluginsWorkspace\Plugins\bin\Debug\System.Globalization.Calendars.dll">
+        <Link>bin\Debug\System.Globalization.Calendars.dll</Link>
+      </Content>
+      <Content Include="..\..\..\PluginsWorkspace\Plugins\bin\Debug\System.Globalization.dll">
+        <Link>bin\Debug\System.Globalization.dll</Link>
+      </Content>
+      <Content Include="..\..\..\PluginsWorkspace\Plugins\bin\Debug\System.Globalization.Extensions.dll">
+        <Link>bin\Debug\System.Globalization.Extensions.dll</Link>
+      </Content>
+      <Content Include="..\..\..\PluginsWorkspace\Plugins\bin\Debug\System.IO.Compression.dll">
+        <Link>bin\Debug\System.IO.Compression.dll</Link>
+      </Content>
+      <Content Include="..\..\..\PluginsWorkspace\Plugins\bin\Debug\System.IO.Compression.ZipFile.dll">
+        <Link>bin\Debug\System.IO.Compression.ZipFile.dll</Link>
+      </Content>
+      <Content Include="..\..\..\PluginsWorkspace\Plugins\bin\Debug\System.IO.dll">
+        <Link>bin\Debug\System.IO.dll</Link>
+      </Content>
+      <Content Include="..\..\..\PluginsWorkspace\Plugins\bin\Debug\System.IO.FileSystem.dll">
+        <Link>bin\Debug\System.IO.FileSystem.dll</Link>
+      </Content>
+      <Content Include="..\..\..\PluginsWorkspace\Plugins\bin\Debug\System.IO.FileSystem.DriveInfo.dll">
+        <Link>bin\Debug\System.IO.FileSystem.DriveInfo.dll</Link>
+      </Content>
+      <Content Include="..\..\..\PluginsWorkspace\Plugins\bin\Debug\System.IO.FileSystem.Primitives.dll">
+        <Link>bin\Debug\System.IO.FileSystem.Primitives.dll</Link>
+      </Content>
+      <Content Include="..\..\..\PluginsWorkspace\Plugins\bin\Debug\System.IO.FileSystem.Watcher.dll">
+        <Link>bin\Debug\System.IO.FileSystem.Watcher.dll</Link>
+      </Content>
+      <Content Include="..\..\..\PluginsWorkspace\Plugins\bin\Debug\System.IO.IsolatedStorage.dll">
+        <Link>bin\Debug\System.IO.IsolatedStorage.dll</Link>
+      </Content>
+      <Content Include="..\..\..\PluginsWorkspace\Plugins\bin\Debug\System.IO.MemoryMappedFiles.dll">
+        <Link>bin\Debug\System.IO.MemoryMappedFiles.dll</Link>
+      </Content>
+      <Content Include="..\..\..\PluginsWorkspace\Plugins\bin\Debug\System.IO.Pipes.dll">
+        <Link>bin\Debug\System.IO.Pipes.dll</Link>
+      </Content>
+      <Content Include="..\..\..\PluginsWorkspace\Plugins\bin\Debug\System.IO.UnmanagedMemoryStream.dll">
+        <Link>bin\Debug\System.IO.UnmanagedMemoryStream.dll</Link>
+      </Content>
+      <Content Include="..\..\..\PluginsWorkspace\Plugins\bin\Debug\System.Linq.dll">
+        <Link>bin\Debug\System.Linq.dll</Link>
+      </Content>
+      <Content Include="..\..\..\PluginsWorkspace\Plugins\bin\Debug\System.Linq.Expressions.dll">
+        <Link>bin\Debug\System.Linq.Expressions.dll</Link>
+      </Content>
+      <Content Include="..\..\..\PluginsWorkspace\Plugins\bin\Debug\System.Linq.Parallel.dll">
+        <Link>bin\Debug\System.Linq.Parallel.dll</Link>
+      </Content>
+      <Content Include="..\..\..\PluginsWorkspace\Plugins\bin\Debug\System.Linq.Queryable.dll">
+        <Link>bin\Debug\System.Linq.Queryable.dll</Link>
+      </Content>
+      <Content Include="..\..\..\PluginsWorkspace\Plugins\bin\Debug\System.Memory.dll">
+        <Link>bin\Debug\System.Memory.dll</Link>
+      </Content>
+      <Content Include="..\..\..\PluginsWorkspace\Plugins\bin\Debug\System.Net.Http.dll">
+        <Link>bin\Debug\System.Net.Http.dll</Link>
+      </Content>
+      <Content Include="..\..\..\PluginsWorkspace\Plugins\bin\Debug\System.Net.NameResolution.dll">
+        <Link>bin\Debug\System.Net.NameResolution.dll</Link>
+      </Content>
+      <Content Include="..\..\..\PluginsWorkspace\Plugins\bin\Debug\System.Net.NetworkInformation.dll">
+        <Link>bin\Debug\System.Net.NetworkInformation.dll</Link>
+      </Content>
+      <Content Include="..\..\..\PluginsWorkspace\Plugins\bin\Debug\System.Net.Ping.dll">
+        <Link>bin\Debug\System.Net.Ping.dll</Link>
+      </Content>
+      <Content Include="..\..\..\PluginsWorkspace\Plugins\bin\Debug\System.Net.Primitives.dll">
+        <Link>bin\Debug\System.Net.Primitives.dll</Link>
+      </Content>
+      <Content Include="..\..\..\PluginsWorkspace\Plugins\bin\Debug\System.Net.Requests.dll">
+        <Link>bin\Debug\System.Net.Requests.dll</Link>
+      </Content>
+      <Content Include="..\..\..\PluginsWorkspace\Plugins\bin\Debug\System.Net.Security.dll">
+        <Link>bin\Debug\System.Net.Security.dll</Link>
+      </Content>
+      <Content Include="..\..\..\PluginsWorkspace\Plugins\bin\Debug\System.Net.Sockets.dll">
+        <Link>bin\Debug\System.Net.Sockets.dll</Link>
+      </Content>
+      <Content Include="..\..\..\PluginsWorkspace\Plugins\bin\Debug\System.Net.WebHeaderCollection.dll">
+        <Link>bin\Debug\System.Net.WebHeaderCollection.dll</Link>
+      </Content>
+      <Content Include="..\..\..\PluginsWorkspace\Plugins\bin\Debug\System.Net.WebSockets.Client.dll">
+        <Link>bin\Debug\System.Net.WebSockets.Client.dll</Link>
+      </Content>
+      <Content Include="..\..\..\PluginsWorkspace\Plugins\bin\Debug\System.Net.WebSockets.dll">
+        <Link>bin\Debug\System.Net.WebSockets.dll</Link>
+      </Content>
+      <Content Include="..\..\..\PluginsWorkspace\Plugins\bin\Debug\System.Numerics.Vectors.dll">
+        <Link>bin\Debug\System.Numerics.Vectors.dll</Link>
+      </Content>
+      <Content Include="..\..\..\PluginsWorkspace\Plugins\bin\Debug\System.ObjectModel.dll">
+        <Link>bin\Debug\System.ObjectModel.dll</Link>
+      </Content>
+      <Content Include="..\..\..\PluginsWorkspace\Plugins\bin\Debug\System.Reflection.dll">
+        <Link>bin\Debug\System.Reflection.dll</Link>
+      </Content>
+      <Content Include="..\..\..\PluginsWorkspace\Plugins\bin\Debug\System.Reflection.Extensions.dll">
+        <Link>bin\Debug\System.Reflection.Extensions.dll</Link>
+      </Content>
+      <Content Include="..\..\..\PluginsWorkspace\Plugins\bin\Debug\System.Reflection.Primitives.dll">
+        <Link>bin\Debug\System.Reflection.Primitives.dll</Link>
+      </Content>
+      <Content Include="..\..\..\PluginsWorkspace\Plugins\bin\Debug\System.Resources.Reader.dll">
+        <Link>bin\Debug\System.Resources.Reader.dll</Link>
+      </Content>
+      <Content Include="..\..\..\PluginsWorkspace\Plugins\bin\Debug\System.Resources.ResourceManager.dll">
+        <Link>bin\Debug\System.Resources.ResourceManager.dll</Link>
+      </Content>
+      <Content Include="..\..\..\PluginsWorkspace\Plugins\bin\Debug\System.Resources.Writer.dll">
+        <Link>bin\Debug\System.Resources.Writer.dll</Link>
+      </Content>
+      <Content Include="..\..\..\PluginsWorkspace\Plugins\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll">
+        <Link>bin\Debug\System.Runtime.CompilerServices.Unsafe.dll</Link>
+      </Content>
+      <Content Include="..\..\..\PluginsWorkspace\Plugins\bin\Debug\System.Runtime.CompilerServices.VisualC.dll">
+        <Link>bin\Debug\System.Runtime.CompilerServices.VisualC.dll</Link>
+      </Content>
+      <Content Include="..\..\..\PluginsWorkspace\Plugins\bin\Debug\System.Runtime.dll">
+        <Link>bin\Debug\System.Runtime.dll</Link>
+      </Content>
+      <Content Include="..\..\..\PluginsWorkspace\Plugins\bin\Debug\System.Runtime.Extensions.dll">
+        <Link>bin\Debug\System.Runtime.Extensions.dll</Link>
+      </Content>
+      <Content Include="..\..\..\PluginsWorkspace\Plugins\bin\Debug\System.Runtime.Handles.dll">
+        <Link>bin\Debug\System.Runtime.Handles.dll</Link>
+      </Content>
+      <Content Include="..\..\..\PluginsWorkspace\Plugins\bin\Debug\System.Runtime.InteropServices.dll">
+        <Link>bin\Debug\System.Runtime.InteropServices.dll</Link>
+      </Content>
+      <Content Include="..\..\..\PluginsWorkspace\Plugins\bin\Debug\System.Runtime.InteropServices.RuntimeInformation.dll">
+        <Link>bin\Debug\System.Runtime.InteropServices.RuntimeInformation.dll</Link>
+      </Content>
+      <Content Include="..\..\..\PluginsWorkspace\Plugins\bin\Debug\System.Runtime.Numerics.dll">
+        <Link>bin\Debug\System.Runtime.Numerics.dll</Link>
+      </Content>
+      <Content Include="..\..\..\PluginsWorkspace\Plugins\bin\Debug\System.Runtime.Serialization.dll">
+        <Link>bin\Debug\System.Runtime.Serialization.dll</Link>
+      </Content>
+      <Content Include="..\..\..\PluginsWorkspace\Plugins\bin\Debug\System.Runtime.Serialization.Formatters.dll">
+        <Link>bin\Debug\System.Runtime.Serialization.Formatters.dll</Link>
+      </Content>
+      <Content Include="..\..\..\PluginsWorkspace\Plugins\bin\Debug\System.Runtime.Serialization.Json.dll">
+        <Link>bin\Debug\System.Runtime.Serialization.Json.dll</Link>
+      </Content>
+      <Content Include="..\..\..\PluginsWorkspace\Plugins\bin\Debug\System.Runtime.Serialization.Primitives.dll">
+        <Link>bin\Debug\System.Runtime.Serialization.Primitives.dll</Link>
+      </Content>
+      <Content Include="..\..\..\PluginsWorkspace\Plugins\bin\Debug\System.Runtime.Serialization.Xml.dll">
+        <Link>bin\Debug\System.Runtime.Serialization.Xml.dll</Link>
+      </Content>
+      <Content Include="..\..\..\PluginsWorkspace\Plugins\bin\Debug\System.Security.Claims.dll">
+        <Link>bin\Debug\System.Security.Claims.dll</Link>
+      </Content>
+      <Content Include="..\..\..\PluginsWorkspace\Plugins\bin\Debug\System.Security.Cryptography.Algorithms.dll">
+        <Link>bin\Debug\System.Security.Cryptography.Algorithms.dll</Link>
+      </Content>
+      <Content Include="..\..\..\PluginsWorkspace\Plugins\bin\Debug\System.Security.Cryptography.Csp.dll">
+        <Link>bin\Debug\System.Security.Cryptography.Csp.dll</Link>
+      </Content>
+      <Content Include="..\..\..\PluginsWorkspace\Plugins\bin\Debug\System.Security.Cryptography.Encoding.dll">
+        <Link>bin\Debug\System.Security.Cryptography.Encoding.dll</Link>
+      </Content>
+      <Content Include="..\..\..\PluginsWorkspace\Plugins\bin\Debug\System.Security.Cryptography.Primitives.dll">
+        <Link>bin\Debug\System.Security.Cryptography.Primitives.dll</Link>
+      </Content>
+      <Content Include="..\..\..\PluginsWorkspace\Plugins\bin\Debug\System.Security.Cryptography.X509Certificates.dll">
+        <Link>bin\Debug\System.Security.Cryptography.X509Certificates.dll</Link>
+      </Content>
+      <Content Include="..\..\..\PluginsWorkspace\Plugins\bin\Debug\System.Security.Principal.dll">
+        <Link>bin\Debug\System.Security.Principal.dll</Link>
+      </Content>
+      <Content Include="..\..\..\PluginsWorkspace\Plugins\bin\Debug\System.Security.SecureString.dll">
+        <Link>bin\Debug\System.Security.SecureString.dll</Link>
+      </Content>
+      <Content Include="..\..\..\PluginsWorkspace\Plugins\bin\Debug\System.Text.Encoding.dll">
+        <Link>bin\Debug\System.Text.Encoding.dll</Link>
+      </Content>
+      <Content Include="..\..\..\PluginsWorkspace\Plugins\bin\Debug\System.Text.Encoding.Extensions.dll">
+        <Link>bin\Debug\System.Text.Encoding.Extensions.dll</Link>
+      </Content>
+      <Content Include="..\..\..\PluginsWorkspace\Plugins\bin\Debug\System.Text.RegularExpressions.dll">
+        <Link>bin\Debug\System.Text.RegularExpressions.dll</Link>
+      </Content>
+      <Content Include="..\..\..\PluginsWorkspace\Plugins\bin\Debug\System.Threading.dll">
+        <Link>bin\Debug\System.Threading.dll</Link>
+      </Content>
+      <Content Include="..\..\..\PluginsWorkspace\Plugins\bin\Debug\System.Threading.Overlapped.dll">
+        <Link>bin\Debug\System.Threading.Overlapped.dll</Link>
+      </Content>
+      <Content Include="..\..\..\PluginsWorkspace\Plugins\bin\Debug\System.Threading.Tasks.dll">
+        <Link>bin\Debug\System.Threading.Tasks.dll</Link>
+      </Content>
+      <Content Include="..\..\..\PluginsWorkspace\Plugins\bin\Debug\System.Threading.Tasks.Parallel.dll">
+        <Link>bin\Debug\System.Threading.Tasks.Parallel.dll</Link>
+      </Content>
+      <Content Include="..\..\..\PluginsWorkspace\Plugins\bin\Debug\System.Threading.Thread.dll">
+        <Link>bin\Debug\System.Threading.Thread.dll</Link>
+      </Content>
+      <Content Include="..\..\..\PluginsWorkspace\Plugins\bin\Debug\System.Threading.ThreadPool.dll">
+        <Link>bin\Debug\System.Threading.ThreadPool.dll</Link>
+      </Content>
+      <Content Include="..\..\..\PluginsWorkspace\Plugins\bin\Debug\System.Threading.Timer.dll">
+        <Link>bin\Debug\System.Threading.Timer.dll</Link>
+      </Content>
+      <Content Include="..\..\..\PluginsWorkspace\Plugins\bin\Debug\System.Transactions.dll">
+        <Link>bin\Debug\System.Transactions.dll</Link>
+      </Content>
+      <Content Include="..\..\..\PluginsWorkspace\Plugins\bin\Debug\System.ValueTuple.dll">
+        <Link>bin\Debug\System.ValueTuple.dll</Link>
+      </Content>
+      <Content Include="..\..\..\PluginsWorkspace\Plugins\bin\Debug\System.Xml.ReaderWriter.dll">
+        <Link>bin\Debug\System.Xml.ReaderWriter.dll</Link>
+      </Content>
+      <Content Include="..\..\..\PluginsWorkspace\Plugins\bin\Debug\System.Xml.XDocument.dll">
+        <Link>bin\Debug\System.Xml.XDocument.dll</Link>
+      </Content>
+      <Content Include="..\..\..\PluginsWorkspace\Plugins\bin\Debug\System.Xml.XmlDocument.dll">
+        <Link>bin\Debug\System.Xml.XmlDocument.dll</Link>
+      </Content>
+      <Content Include="..\..\..\PluginsWorkspace\Plugins\bin\Debug\System.Xml.XmlSerializer.dll">
+        <Link>bin\Debug\System.Xml.XmlSerializer.dll</Link>
+      </Content>
+      <Content Include="..\..\..\PluginsWorkspace\Plugins\bin\Debug\System.Xml.XPath.dll">
+        <Link>bin\Debug\System.Xml.XPath.dll</Link>
+      </Content>
+      <Content Include="..\..\..\PluginsWorkspace\Plugins\bin\Debug\System.Xml.XPath.XDocument.dll">
+        <Link>bin\Debug\System.Xml.XPath.XDocument.dll</Link>
+      </Content>
+      <Content Include="..\..\..\PluginsWorkspace\Plugins\bin\Debug\Unity.TextMeshPro.dll">
+        <Link>bin\Debug\Unity.TextMeshPro.dll</Link>
+      </Content>
+      <Content Include="..\..\..\PluginsWorkspace\Plugins\bin\Debug\UnityEngine.AccessibilityModule.dll">
+        <Link>bin\Debug\UnityEngine.AccessibilityModule.dll</Link>
+      </Content>
+      <Content Include="..\..\..\PluginsWorkspace\Plugins\bin\Debug\UnityEngine.AIModule.dll">
+        <Link>bin\Debug\UnityEngine.AIModule.dll</Link>
+      </Content>
+      <Content Include="..\..\..\PluginsWorkspace\Plugins\bin\Debug\UnityEngine.AndroidJNIModule.dll">
+        <Link>bin\Debug\UnityEngine.AndroidJNIModule.dll</Link>
+      </Content>
+      <Content Include="..\..\..\PluginsWorkspace\Plugins\bin\Debug\UnityEngine.AnimationModule.dll">
+        <Link>bin\Debug\UnityEngine.AnimationModule.dll</Link>
+      </Content>
+      <Content Include="..\..\..\PluginsWorkspace\Plugins\bin\Debug\UnityEngine.ARModule.dll">
+        <Link>bin\Debug\UnityEngine.ARModule.dll</Link>
+      </Content>
+      <Content Include="..\..\..\PluginsWorkspace\Plugins\bin\Debug\UnityEngine.AssetBundleModule.dll">
+        <Link>bin\Debug\UnityEngine.AssetBundleModule.dll</Link>
+      </Content>
+      <Content Include="..\..\..\PluginsWorkspace\Plugins\bin\Debug\UnityEngine.AudioModule.dll">
+        <Link>bin\Debug\UnityEngine.AudioModule.dll</Link>
+      </Content>
+      <Content Include="..\..\..\PluginsWorkspace\Plugins\bin\Debug\UnityEngine.ClothModule.dll">
+        <Link>bin\Debug\UnityEngine.ClothModule.dll</Link>
+      </Content>
+      <Content Include="..\..\..\PluginsWorkspace\Plugins\bin\Debug\UnityEngine.ClusterInputModule.dll">
+        <Link>bin\Debug\UnityEngine.ClusterInputModule.dll</Link>
+      </Content>
+      <Content Include="..\..\..\PluginsWorkspace\Plugins\bin\Debug\UnityEngine.ClusterRendererModule.dll">
+        <Link>bin\Debug\UnityEngine.ClusterRendererModule.dll</Link>
+      </Content>
+      <Content Include="..\..\..\PluginsWorkspace\Plugins\bin\Debug\UnityEngine.CoreModule.dll">
+        <Link>bin\Debug\UnityEngine.CoreModule.dll</Link>
+      </Content>
+      <Content Include="..\..\..\PluginsWorkspace\Plugins\bin\Debug\UnityEngine.CrashReportingModule.dll">
+        <Link>bin\Debug\UnityEngine.CrashReportingModule.dll</Link>
+      </Content>
+      <Content Include="..\..\..\PluginsWorkspace\Plugins\bin\Debug\UnityEngine.DirectorModule.dll">
+        <Link>bin\Debug\UnityEngine.DirectorModule.dll</Link>
+      </Content>
+      <Content Include="..\..\..\PluginsWorkspace\Plugins\bin\Debug\UnityEngine.dll">
+        <Link>bin\Debug\UnityEngine.dll</Link>
+      </Content>
+      <Content Include="..\..\..\PluginsWorkspace\Plugins\bin\Debug\UnityEngine.DSPGraphModule.dll">
+        <Link>bin\Debug\UnityEngine.DSPGraphModule.dll</Link>
+      </Content>
+      <Content Include="..\..\..\PluginsWorkspace\Plugins\bin\Debug\UnityEngine.GameCenterModule.dll">
+        <Link>bin\Debug\UnityEngine.GameCenterModule.dll</Link>
+      </Content>
+      <Content Include="..\..\..\PluginsWorkspace\Plugins\bin\Debug\UnityEngine.GridModule.dll">
+        <Link>bin\Debug\UnityEngine.GridModule.dll</Link>
+      </Content>
+      <Content Include="..\..\..\PluginsWorkspace\Plugins\bin\Debug\UnityEngine.ImageConversionModule.dll">
+        <Link>bin\Debug\UnityEngine.ImageConversionModule.dll</Link>
+      </Content>
+      <Content Include="..\..\..\PluginsWorkspace\Plugins\bin\Debug\UnityEngine.IMGUIModule.dll">
+        <Link>bin\Debug\UnityEngine.IMGUIModule.dll</Link>
+      </Content>
+      <Content Include="..\..\..\PluginsWorkspace\Plugins\bin\Debug\UnityEngine.InputLegacyModule.dll">
+        <Link>bin\Debug\UnityEngine.InputLegacyModule.dll</Link>
+      </Content>
+      <Content Include="..\..\..\PluginsWorkspace\Plugins\bin\Debug\UnityEngine.InputModule.dll">
+        <Link>bin\Debug\UnityEngine.InputModule.dll</Link>
+      </Content>
+      <Content Include="..\..\..\PluginsWorkspace\Plugins\bin\Debug\UnityEngine.JSONSerializeModule.dll">
+        <Link>bin\Debug\UnityEngine.JSONSerializeModule.dll</Link>
+      </Content>
+      <Content Include="..\..\..\PluginsWorkspace\Plugins\bin\Debug\UnityEngine.LocalizationModule.dll">
+        <Link>bin\Debug\UnityEngine.LocalizationModule.dll</Link>
+      </Content>
+      <Content Include="..\..\..\PluginsWorkspace\Plugins\bin\Debug\UnityEngine.ParticleSystemModule.dll">
+        <Link>bin\Debug\UnityEngine.ParticleSystemModule.dll</Link>
+      </Content>
+      <Content Include="..\..\..\PluginsWorkspace\Plugins\bin\Debug\UnityEngine.PerformanceReportingModule.dll">
+        <Link>bin\Debug\UnityEngine.PerformanceReportingModule.dll</Link>
+      </Content>
+      <Content Include="..\..\..\PluginsWorkspace\Plugins\bin\Debug\UnityEngine.Physics2DModule.dll">
+        <Link>bin\Debug\UnityEngine.Physics2DModule.dll</Link>
+      </Content>
+      <Content Include="..\..\..\PluginsWorkspace\Plugins\bin\Debug\UnityEngine.PhysicsModule.dll">
+        <Link>bin\Debug\UnityEngine.PhysicsModule.dll</Link>
+      </Content>
+      <Content Include="..\..\..\PluginsWorkspace\Plugins\bin\Debug\UnityEngine.ScreenCaptureModule.dll">
+        <Link>bin\Debug\UnityEngine.ScreenCaptureModule.dll</Link>
+      </Content>
+      <Content Include="..\..\..\PluginsWorkspace\Plugins\bin\Debug\UnityEngine.SharedInternalsModule.dll">
+        <Link>bin\Debug\UnityEngine.SharedInternalsModule.dll</Link>
+      </Content>
+      <Content Include="..\..\..\PluginsWorkspace\Plugins\bin\Debug\UnityEngine.SpriteMaskModule.dll">
+        <Link>bin\Debug\UnityEngine.SpriteMaskModule.dll</Link>
+      </Content>
+      <Content Include="..\..\..\PluginsWorkspace\Plugins\bin\Debug\UnityEngine.SpriteShapeModule.dll">
+        <Link>bin\Debug\UnityEngine.SpriteShapeModule.dll</Link>
+      </Content>
+      <Content Include="..\..\..\PluginsWorkspace\Plugins\bin\Debug\UnityEngine.StreamingModule.dll">
+        <Link>bin\Debug\UnityEngine.StreamingModule.dll</Link>
+      </Content>
+      <Content Include="..\..\..\PluginsWorkspace\Plugins\bin\Debug\UnityEngine.SubsystemsModule.dll">
+        <Link>bin\Debug\UnityEngine.SubsystemsModule.dll</Link>
+      </Content>
+      <Content Include="..\..\..\PluginsWorkspace\Plugins\bin\Debug\UnityEngine.TerrainModule.dll">
+        <Link>bin\Debug\UnityEngine.TerrainModule.dll</Link>
+      </Content>
+      <Content Include="..\..\..\PluginsWorkspace\Plugins\bin\Debug\UnityEngine.TerrainPhysicsModule.dll">
+        <Link>bin\Debug\UnityEngine.TerrainPhysicsModule.dll</Link>
+      </Content>
+      <Content Include="..\..\..\PluginsWorkspace\Plugins\bin\Debug\UnityEngine.TextCoreModule.dll">
+        <Link>bin\Debug\UnityEngine.TextCoreModule.dll</Link>
+      </Content>
+      <Content Include="..\..\..\PluginsWorkspace\Plugins\bin\Debug\UnityEngine.TextRenderingModule.dll">
+        <Link>bin\Debug\UnityEngine.TextRenderingModule.dll</Link>
+      </Content>
+      <Content Include="..\..\..\PluginsWorkspace\Plugins\bin\Debug\UnityEngine.TilemapModule.dll">
+        <Link>bin\Debug\UnityEngine.TilemapModule.dll</Link>
+      </Content>
+      <Content Include="..\..\..\PluginsWorkspace\Plugins\bin\Debug\UnityEngine.UI.dll">
+        <Link>bin\Debug\UnityEngine.UI.dll</Link>
+      </Content>
+      <Content Include="..\..\..\PluginsWorkspace\Plugins\bin\Debug\UnityEngine.UIElementsModule.dll">
+        <Link>bin\Debug\UnityEngine.UIElementsModule.dll</Link>
+      </Content>
+      <Content Include="..\..\..\PluginsWorkspace\Plugins\bin\Debug\UnityEngine.UIModule.dll">
+        <Link>bin\Debug\UnityEngine.UIModule.dll</Link>
+      </Content>
+      <Content Include="..\..\..\PluginsWorkspace\Plugins\bin\Debug\UnityEngine.UNETModule.dll">
+        <Link>bin\Debug\UnityEngine.UNETModule.dll</Link>
+      </Content>
+      <Content Include="..\..\..\PluginsWorkspace\Plugins\bin\Debug\UnityEngine.UnityAnalyticsModule.dll">
+        <Link>bin\Debug\UnityEngine.UnityAnalyticsModule.dll</Link>
+      </Content>
+      <Content Include="..\..\..\PluginsWorkspace\Plugins\bin\Debug\UnityEngine.UnityConnectModule.dll">
+        <Link>bin\Debug\UnityEngine.UnityConnectModule.dll</Link>
+      </Content>
+      <Content Include="..\..\..\PluginsWorkspace\Plugins\bin\Debug\UnityEngine.UnityWebRequestAssetBundleModule.dll">
+        <Link>bin\Debug\UnityEngine.UnityWebRequestAssetBundleModule.dll</Link>
+      </Content>
+      <Content Include="..\..\..\PluginsWorkspace\Plugins\bin\Debug\UnityEngine.UnityWebRequestAudioModule.dll">
+        <Link>bin\Debug\UnityEngine.UnityWebRequestAudioModule.dll</Link>
+      </Content>
+      <Content Include="..\..\..\PluginsWorkspace\Plugins\bin\Debug\UnityEngine.UnityWebRequestModule.dll">
+        <Link>bin\Debug\UnityEngine.UnityWebRequestModule.dll</Link>
+      </Content>
+      <Content Include="..\..\..\PluginsWorkspace\Plugins\bin\Debug\UnityEngine.UnityWebRequestTextureModule.dll">
+        <Link>bin\Debug\UnityEngine.UnityWebRequestTextureModule.dll</Link>
+      </Content>
+      <Content Include="..\..\..\PluginsWorkspace\Plugins\bin\Debug\UnityEngine.UnityWebRequestWWWModule.dll">
+        <Link>bin\Debug\UnityEngine.UnityWebRequestWWWModule.dll</Link>
+      </Content>
+      <Content Include="..\..\..\PluginsWorkspace\Plugins\bin\Debug\UnityEngine.VehiclesModule.dll">
+        <Link>bin\Debug\UnityEngine.VehiclesModule.dll</Link>
+      </Content>
+      <Content Include="..\..\..\PluginsWorkspace\Plugins\bin\Debug\UnityEngine.VFXModule.dll">
+        <Link>bin\Debug\UnityEngine.VFXModule.dll</Link>
+      </Content>
+      <Content Include="..\..\..\PluginsWorkspace\Plugins\bin\Debug\UnityEngine.VideoModule.dll">
+        <Link>bin\Debug\UnityEngine.VideoModule.dll</Link>
+      </Content>
+      <Content Include="..\..\..\PluginsWorkspace\Plugins\bin\Debug\UnityEngine.VRModule.dll">
+        <Link>bin\Debug\UnityEngine.VRModule.dll</Link>
+      </Content>
+      <Content Include="..\..\..\PluginsWorkspace\Plugins\bin\Debug\UnityEngine.WindModule.dll">
+        <Link>bin\Debug\UnityEngine.WindModule.dll</Link>
+      </Content>
+      <Content Include="..\..\..\PluginsWorkspace\Plugins\bin\Debug\UnityEngine.XRModule.dll">
+        <Link>bin\Debug\UnityEngine.XRModule.dll</Link>
+      </Content>
+      <Content Include="..\..\..\PluginsWorkspace\Plugins\obj\Debug\Oxide.Plugins.dll">
+        <Link>obj\Debug\Oxide.Plugins.dll</Link>
+      </Content>
+      <Content Include="..\..\..\PluginsWorkspace\Plugins\obj\Debug\Oxide.Plugins.pdb">
+        <Link>obj\Debug\Oxide.Plugins.pdb</Link>
+      </Content>
+      <Content Include="..\..\..\PluginsWorkspace\Plugins\obj\Debug\Plugins.csproj.AssemblyReference.cache">
+        <Link>obj\Debug\Plugins.csproj.AssemblyReference.cache</Link>
+      </Content>
+      <Content Include="..\..\..\PluginsWorkspace\Plugins\obj\Debug\Plugins.csproj.CopyComplete">
+        <Link>obj\Debug\Plugins.csproj.CopyComplete</Link>
+      </Content>
+      <Content Include="..\..\..\PluginsWorkspace\Plugins\obj\Debug\Plugins.csproj.CoreCompileInputs.cache">
+        <Link>obj\Debug\Plugins.csproj.CoreCompileInputs.cache</Link>
+      </Content>
+      <Content Include="..\..\..\PluginsWorkspace\Plugins\obj\Debug\Plugins.csproj.FileListAbsolute.txt">
+        <Link>obj\Debug\Plugins.csproj.FileListAbsolute.txt</Link>
+      </Content>
+      <Content Include="..\..\..\PluginsWorkspace\Plugins\obj\Debug\Plugins.csprojAssemblyReference.cache">
+        <Link>obj\Debug\Plugins.csprojAssemblyReference.cache</Link>
+      </Content>
+      <Content Include=".idea\.idea.Plugins.dir\.idea\.gitignore" />
+      <Content Include=".idea\.idea.Plugins.dir\.idea\encodings.xml" />
+      <Content Include=".idea\.idea.Plugins.dir\.idea\indexLayout.xml" />
+      <Content Include=".idea\.idea.Plugins.dir\.idea\projectSettingsUpdater.xml" />
+      <Content Include=".idea\.idea.Plugins.dir\.idea\workspace.xml" />
+      <Content Include="Folder.DotSettings.user" />
+      <Content Include="packages\Microsoft.CSharp.4.7.0\.signature.p7s" />
+      <Content Include="packages\Microsoft.CSharp.4.7.0\lib\MonoAndroid10\_._" />
+      <Content Include="packages\Microsoft.CSharp.4.7.0\lib\MonoTouch10\_._" />
+      <Content Include="packages\Microsoft.CSharp.4.7.0\lib\net45\_._" />
+      <Content Include="packages\Microsoft.CSharp.4.7.0\lib\netcore50\Microsoft.CSharp.dll" />
+      <Content Include="packages\Microsoft.CSharp.4.7.0\lib\netcoreapp2.0\_._" />
+      <Content Include="packages\Microsoft.CSharp.4.7.0\lib\netstandard1.3\Microsoft.CSharp.dll" />
+      <Content Include="packages\Microsoft.CSharp.4.7.0\lib\netstandard2.0\Microsoft.CSharp.dll" />
+      <Content Include="packages\Microsoft.CSharp.4.7.0\lib\netstandard2.0\Microsoft.CSharp.xml" />
+      <Content Include="packages\Microsoft.CSharp.4.7.0\lib\portable-net45+win8+wp8+wpa81\_._" />
+      <Content Include="packages\Microsoft.CSharp.4.7.0\lib\uap10.0.16299\_._" />
+      <Content Include="packages\Microsoft.CSharp.4.7.0\lib\win8\_._" />
+      <Content Include="packages\Microsoft.CSharp.4.7.0\lib\wp80\_._" />
+      <Content Include="packages\Microsoft.CSharp.4.7.0\lib\wpa81\_._" />
+      <Content Include="packages\Microsoft.CSharp.4.7.0\lib\xamarinios10\_._" />
+      <Content Include="packages\Microsoft.CSharp.4.7.0\lib\xamarinmac20\_._" />
+      <Content Include="packages\Microsoft.CSharp.4.7.0\lib\xamarintvos10\_._" />
+      <Content Include="packages\Microsoft.CSharp.4.7.0\lib\xamarinwatchos10\_._" />
+      <Content Include="packages\Microsoft.CSharp.4.7.0\LICENSE.TXT" />
+      <Content Include="packages\Microsoft.CSharp.4.7.0\Microsoft.CSharp.4.7.0.nupkg" />
+      <Content Include="packages\Microsoft.CSharp.4.7.0\ref\MonoAndroid10\_._" />
+      <Content Include="packages\Microsoft.CSharp.4.7.0\ref\MonoTouch10\_._" />
+      <Content Include="packages\Microsoft.CSharp.4.7.0\ref\net45\_._" />
+      <Content Include="packages\Microsoft.CSharp.4.7.0\ref\netcore50\de\Microsoft.CSharp.xml" />
+      <Content Include="packages\Microsoft.CSharp.4.7.0\ref\netcore50\es\Microsoft.CSharp.xml" />
+      <Content Include="packages\Microsoft.CSharp.4.7.0\ref\netcore50\fr\Microsoft.CSharp.xml" />
+      <Content Include="packages\Microsoft.CSharp.4.7.0\ref\netcore50\it\Microsoft.CSharp.xml" />
+      <Content Include="packages\Microsoft.CSharp.4.7.0\ref\netcore50\ja\Microsoft.CSharp.xml" />
+      <Content Include="packages\Microsoft.CSharp.4.7.0\ref\netcore50\ko\Microsoft.CSharp.xml" />
+      <Content Include="packages\Microsoft.CSharp.4.7.0\ref\netcore50\Microsoft.CSharp.dll" />
+      <Content Include="packages\Microsoft.CSharp.4.7.0\ref\netcore50\Microsoft.CSharp.xml" />
+      <Content Include="packages\Microsoft.CSharp.4.7.0\ref\netcore50\ru\Microsoft.CSharp.xml" />
+      <Content Include="packages\Microsoft.CSharp.4.7.0\ref\netcore50\zh-hans\Microsoft.CSharp.xml" />
+      <Content Include="packages\Microsoft.CSharp.4.7.0\ref\netcore50\zh-hant\Microsoft.CSharp.xml" />
+      <Content Include="packages\Microsoft.CSharp.4.7.0\ref\netcoreapp2.0\_._" />
+      <Content Include="packages\Microsoft.CSharp.4.7.0\ref\netstandard1.0\de\Microsoft.CSharp.xml" />
+      <Content Include="packages\Microsoft.CSharp.4.7.0\ref\netstandard1.0\es\Microsoft.CSharp.xml" />
+      <Content Include="packages\Microsoft.CSharp.4.7.0\ref\netstandard1.0\fr\Microsoft.CSharp.xml" />
+      <Content Include="packages\Microsoft.CSharp.4.7.0\ref\netstandard1.0\it\Microsoft.CSharp.xml" />
+      <Content Include="packages\Microsoft.CSharp.4.7.0\ref\netstandard1.0\ja\Microsoft.CSharp.xml" />
+      <Content Include="packages\Microsoft.CSharp.4.7.0\ref\netstandard1.0\ko\Microsoft.CSharp.xml" />
+      <Content Include="packages\Microsoft.CSharp.4.7.0\ref\netstandard1.0\Microsoft.CSharp.dll" />
+      <Content Include="packages\Microsoft.CSharp.4.7.0\ref\netstandard1.0\Microsoft.CSharp.xml" />
+      <Content Include="packages\Microsoft.CSharp.4.7.0\ref\netstandard1.0\ru\Microsoft.CSharp.xml" />
+      <Content Include="packages\Microsoft.CSharp.4.7.0\ref\netstandard1.0\zh-hans\Microsoft.CSharp.xml" />
+      <Content Include="packages\Microsoft.CSharp.4.7.0\ref\netstandard1.0\zh-hant\Microsoft.CSharp.xml" />
+      <Content Include="packages\Microsoft.CSharp.4.7.0\ref\netstandard2.0\Microsoft.CSharp.dll" />
+      <Content Include="packages\Microsoft.CSharp.4.7.0\ref\netstandard2.0\Microsoft.CSharp.xml" />
+      <Content Include="packages\Microsoft.CSharp.4.7.0\ref\portable-net45+win8+wp8+wpa81\_._" />
+      <Content Include="packages\Microsoft.CSharp.4.7.0\ref\uap10.0.16299\_._" />
+      <Content Include="packages\Microsoft.CSharp.4.7.0\ref\win8\_._" />
+      <Content Include="packages\Microsoft.CSharp.4.7.0\ref\wp80\_._" />
+      <Content Include="packages\Microsoft.CSharp.4.7.0\ref\wpa81\_._" />
+      <Content Include="packages\Microsoft.CSharp.4.7.0\ref\xamarinios10\_._" />
+      <Content Include="packages\Microsoft.CSharp.4.7.0\ref\xamarinmac20\_._" />
+      <Content Include="packages\Microsoft.CSharp.4.7.0\ref\xamarintvos10\_._" />
+      <Content Include="packages\Microsoft.CSharp.4.7.0\ref\xamarinwatchos10\_._" />
+      <Content Include="packages\Microsoft.CSharp.4.7.0\THIRD-PARTY-NOTICES.TXT" />
+      <Content Include="packages\Microsoft.CSharp.4.7.0\useSharedDesignerContext.txt" />
+      <Content Include="packages\Microsoft.CSharp.4.7.0\version.txt" />
+      <Content Include="Plugins.csproj" />
+      <Content Include="Plugins.csproj.DotSettings" />
+    </ItemGroup>
+    <ItemGroup>
+      <Folder Include="Выполнено" />
+      <Folder Include="Плагин" />
+    </ItemGroup>
+    <ItemGroup>
+      <None Include="packages.config" />
+    </ItemGroup>
+    <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
     <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
          Other similar extension points exist, see Microsoft.Common.targets.
     <Target Name="BeforeBuild">
